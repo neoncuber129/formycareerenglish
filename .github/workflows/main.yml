@@ -1,4 +1,4 @@
-name: Build Flutter IPA
+name: Build Flutter iOS
 
 on:
   workflow_dispatch:
@@ -11,71 +11,37 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Find Flutter iOS project
-        id: flutter_project
-        shell: bash
-        run: |
-          echo "Searching for Flutter iOS project..."
-
-          PROJECT_DIR=""
-
-          while IFS= read -r pubspec; do
-            DIR=$(dirname "$pubspec")
-
-            if [ -d "$DIR/ios" ] && [ -f "$DIR/ios/Podfile" ]; then
-              PROJECT_DIR="$DIR"
-              break
-            fi
-          done < <(find . -name "pubspec.yaml" \
-            -not -path "*/.dart_tool/*" \
-            -not -path "*/build/*")
-
-          if [ -z "$PROJECT_DIR" ]; then
-            echo "ERROR: Flutter iOS project not found"
-            echo ""
-            echo "Available pubspec.yaml files:"
-            find . -name "pubspec.yaml" \
-              -not -path "*/.dart_tool/*" \
-              -not -path "*/build/*"
-            exit 1
-          fi
-
-          echo "Flutter iOS project found at: $PROJECT_DIR"
-
-          echo "project_dir=$PROJECT_DIR" >> "$GITHUB_OUTPUT"
-
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: stable
           cache: true
 
+      - name: Check project
+        working-directory: apps/desktop
+        run: |
+          echo "=== Flutter project ==="
+          pwd
+
+          echo "=== Files ==="
+          ls -la
+
+          echo "=== iOS ==="
+          ls -la ios
+
       - name: Flutter version
         run: flutter --version
 
       - name: Get dependencies
-        working-directory: ${{ steps.flutter_project.outputs.project_dir }}
+        working-directory: apps/desktop
         run: flutter pub get
 
-      - name: Build IPA
-        working-directory: ${{ steps.flutter_project.outputs.project_dir }}
-        run: flutter build ipa --release --no-codesign
+      - name: Build iOS
+        working-directory: apps/desktop
+        run: flutter build ios --release --no-codesign
 
-      - name: Show generated files
-        shell: bash
+      - name: Show build output
+        working-directory: apps/desktop
         run: |
-          PROJECT_DIR="${{ steps.flutter_project.outputs.project_dir }}"
-
-          echo "Searching generated iOS files..."
-
-          find "$PROJECT_DIR/build/ios" \
-            -type f \
-            \( -name "*.ipa" -o -name "*.app" \) \
-            -print
-
-      - name: Upload IPA
-        uses: actions/upload-artifact@v4
-        with:
-          name: formycareerenglish-ipa
-          path: ${{ steps.flutter_project.outputs.project_dir }}/build/ios/ipa/*.ipa
-          if-no-files-found: error
+          echo "=== build/ios ==="
+          find build/ios -maxdepth 4 -type f | sort
