@@ -61,6 +61,7 @@ void main() {
         eventBridge: bridge,
         win32Api: api,
         isWindows: () => true,
+        windowHandleResolver: () => null,
       );
 
       final result = await service.registerHotkey(
@@ -86,6 +87,7 @@ void main() {
         eventBridge: bridge,
         win32Api: api,
         isWindows: () => true,
+        windowHandleResolver: () => null,
       );
 
       final first = await service.registerHotkey(
@@ -126,6 +128,7 @@ void main() {
         eventBridge: bridge,
         win32Api: api,
         isWindows: () => true,
+        windowHandleResolver: () => null,
       );
 
       await service.registerHotkey(
@@ -164,6 +167,7 @@ void main() {
         eventBridge: bridge,
         win32Api: api,
         isWindows: () => true,
+        windowHandleResolver: () => null,
       );
 
       await service.registerHotkey(
@@ -210,6 +214,7 @@ void main() {
         eventBridge: bridge,
         win32Api: api,
         isWindows: () => true,
+        windowHandleResolver: () => null,
       );
 
       await service.registerHotkey(

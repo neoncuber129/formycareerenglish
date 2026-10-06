@@ -392,6 +392,9 @@ class WindowsHotkeyService implements HotkeyService {
   }
 
   static HWND? _defaultWindowHandleResolver() {
+    if (!Platform.isWindows) {
+      return null;
+    }
     final activeWindow = GetActiveWindow();
     if (activeWindow.address != 0) {
       return activeWindow;
