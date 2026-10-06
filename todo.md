@@ -10,3 +10,4 @@
   - [x] Upload `.ipa` artifact with clear name and metadata
   - [x] Support optional GitHub Release attachment when a tag is pushed
 - [x] Document usage and assumptions in `assumptions.md` and summary
+- [x] Resolve CocoaPods `pod "Flutter"` minimum deployment target conflict by setting iOS target to 15.0 in Podfile and project.pbxproj
