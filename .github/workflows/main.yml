@@ -30,7 +30,7 @@ jobs:
         run: flutter --version
 
       # ==============================
-      # 4. Get dependencies
+      # 4. Get Flutter dependencies
       # ==============================
       - name: Flutter pub get
         working-directory: apps/desktop
@@ -45,9 +45,9 @@ jobs:
           pod --version
 
       # ==============================
-      # 6. Install iOS Pods
+      # 6. Install iOS dependencies
       # ==============================
-      - name: Install Pods
+      - name: Pod install
         working-directory: apps/desktop/ios
         run: pod install --repo-update
 
@@ -59,16 +59,16 @@ jobs:
         run: flutter build ipa --release
 
       # ==============================
-      # 8. Show generated IPA
+      # 8. Check generated IPA
       # ==============================
       - name: Check IPA
         working-directory: apps/desktop
         run: |
-          echo "=== IPA files ==="
+          echo "=== Generated IPA ==="
           find build/ios/ipa -type f -name "*.ipa" -print
 
       # ==============================
-      # 9. Upload IPA to GitHub
+      # 9. Upload IPA
       # ==============================
       - name: Upload IPA
         uses: actions/upload-artifact@v4
