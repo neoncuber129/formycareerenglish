@@ -1,78 +1,138 @@
-name: Build Flutter IPA
+name: Build iOS IPA
 
 on:
   workflow_dispatch:
+    inputs:
+      app:
+        description: 'Target Application to Build'
+        required: true
+        default: 'mobile'
+        type: choice
+        options:
+          - mobile
+          - desktop
+      build_mode:
+        description: 'Build Mode'
+        required: true
+        default: 'release'
+        type: choice
+        options:
+          - release
+          - debug
+          - profile
+  push:
+    tags:
+      - 'v*'
 
 jobs:
-  build-ios:
+  build-ipa:
+    name: Build iOS IPA (${{ inputs.app || 'mobile' }})
     runs-on: macos-latest
 
     steps:
-      # ==============================
-      # 1. Checkout source code
-      # ==============================
-      - name: Checkout
+      # 1. Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ==============================
-      # 2. Setup Flutter
-      # ==============================
+      # 2. Setup Flutter SDK
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: stable
           cache: true
 
-      # ==============================
-      # 3. Flutter version
-      # ==============================
-      - name: Flutter version
-        run: flutter --version
+      - name: Flutter Info
+        run: flutter doctor -v
 
-      # ==============================
-      # 4. Get Flutter dependencies
-      # ==============================
-      - name: Flutter pub get
-        working-directory: apps/desktop
-        run: flutter pub get
-
-      # ==============================
-      # 5. Install CocoaPods
-      # ==============================
-      - name: Install CocoaPods
+      # 3. Setup CocoaPods
+      - name: Setup CocoaPods
         run: |
-          sudo gem install cocoapods
           pod --version
 
-      # ==============================
-      # 6. Install iOS dependencies
-      # ==============================
-      - name: Pod install
-        working-directory: apps/desktop/ios
-        run: pod install --repo-update
-
-      # ==============================
-      # 7. Build IPA
-      # ==============================
-      - name: Build IPA
-        working-directory: apps/desktop
-        run: flutter build ipa --release
-
-      # ==============================
-      # 8. Check generated IPA
-      # ==============================
-      - name: Check IPA
-        working-directory: apps/desktop
+      # 4. Prepare Shared Packages & Localization
+      - name: Prepare shared packages
         run: |
-          echo "=== Generated IPA ==="
-          find build/ios/ipa -type f -name "*.ipa" -print
+          if [ -d "packages/app_l10n" ]; then
+            echo "Building packages/app_l10n..."
+            cd packages/app_l10n
+            flutter pub get
+            flutter gen-l10n || true
+            cd ../..
+          fi
 
-      # ==============================
-      # 9. Upload IPA
-      # ==============================
-      - name: Upload IPA
+      # 5. Resolve App Dependencies
+      - name: Resolve Flutter & CocoaPods dependencies
+        run: |
+          APP_DIR="apps/${{ inputs.app || 'mobile' }}"
+          echo "Resolving dependencies for $APP_DIR..."
+          cd "$APP_DIR"
+          flutter pub get
+          cd ios
+          pod install --repo-update
+          cd ../../..
+
+      # 6. Build iOS Application (No Code Sign)
+      - name: Build iOS Application
+        run: |
+          APP_DIR="apps/${{ inputs.app || 'mobile' }}"
+          BUILD_MODE="${{ inputs.build_mode || 'release' }}"
+          echo "Building iOS in $BUILD_MODE mode for $APP_DIR..."
+          cd "$APP_DIR"
+          flutter build ios --$BUILD_MODE --no-codesign
+
+      # 7. Package Runner.app into .ipa (Payload structure)
+      - name: Package .IPA file
+        run: |
+          APP_DIR="apps/${{ inputs.app || 'mobile' }}"
+          APP_TARGET="${{ inputs.app || 'mobile' }}"
+          BUILD_MODE="${{ inputs.build_mode || 'release' }}"
+
+          BUILD_OUTPUT_DIR="$APP_DIR/build/ios/iphoneos"
+          if [ ! -d "$BUILD_OUTPUT_DIR/Runner.app" ]; then
+            echo "Error: Runner.app not found at $BUILD_OUTPUT_DIR/Runner.app"
+            exit 1
+          fi
+
+          IPA_DIR="$APP_DIR/build/ios/ipa"
+          rm -rf "$IPA_DIR"
+          mkdir -p "$IPA_DIR/Payload"
+
+          echo "Copying Runner.app into Payload directory..."
+          cp -R "$BUILD_OUTPUT_DIR/Runner.app" "$IPA_DIR/Payload/"
+
+          # Read version from pubspec.yaml
+          RAW_VERSION=$(grep '^version:' "$APP_DIR/pubspec.yaml" | head -n 1 | awk '{print $2}' | tr -d '\r')
+          VERSION_TAG=${RAW_VERSION//+/_b}
+          if [ -z "$VERSION_TAG" ]; then
+            VERSION_TAG="1.0.0"
+          fi
+
+          IPA_FILENAME="FormyCareer-${APP_TARGET}-${VERSION_TAG}-${BUILD_MODE}.ipa"
+
+          echo "Creating IPA archive: $IPA_FILENAME..."
+          cd "$IPA_DIR"
+          zip -r -y -q "$IPA_FILENAME" Payload
+          rm -rf Payload
+
+          echo "IPA packaging completed successfully:"
+          ls -lh "$IPA_FILENAME"
+          echo "FINAL_IPA_NAME=$IPA_FILENAME" >> $GITHUB_ENV
+          echo "FINAL_IPA_PATH=$IPA_DIR/$IPA_FILENAME" >> $GITHUB_ENV
+
+      # 8. Upload IPA to Workflow Artifacts
+      - name: Upload IPA Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: formycareerenglish-ipa
-          path: apps/desktop/build/ios/ipa/*.ipa
+          name: ${{ env.FINAL_IPA_NAME || 'FormyCareer-iOS.ipa' }}
+          path: apps/**/build/ios/ipa/*.ipa
           if-no-files-found: error
+          retention-days: 30
+
+      # 9. Optional: Attach to GitHub Release on Tag Push
+      - name: Attach IPA to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: apps/**/build/ios/ipa/*.ipa
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
