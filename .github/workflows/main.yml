@@ -11,28 +11,36 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Find Flutter project
+      - name: Find Flutter iOS project
         id: flutter_project
         shell: bash
         run: |
-          PUBSPEC=$(find . -name "pubspec.yaml" \
+          echo "Searching for Flutter iOS project..."
+
+          PROJECT_DIR=""
+
+          while IFS= read -r pubspec; do
+            DIR=$(dirname "$pubspec")
+
+            if [ -d "$DIR/ios" ] && [ -f "$DIR/ios/Podfile" ]; then
+              PROJECT_DIR="$DIR"
+              break
+            fi
+          done < <(find . -name "pubspec.yaml" \
             -not -path "*/.dart_tool/*" \
-            -not -path "*/build/*" \
-            | head -n 1)
+            -not -path "*/build/*")
 
-          if [ -z "$PUBSPEC" ]; then
-            echo "ERROR: pubspec.yaml not found"
+          if [ -z "$PROJECT_DIR" ]; then
+            echo "ERROR: Flutter iOS project not found"
+            echo ""
+            echo "Available pubspec.yaml files:"
+            find . -name "pubspec.yaml" \
+              -not -path "*/.dart_tool/*" \
+              -not -path "*/build/*"
             exit 1
           fi
 
-          PROJECT_DIR=$(dirname "$PUBSPEC")
-
-          echo "Flutter project found at: $PROJECT_DIR"
-
-          if [ ! -d "$PROJECT_DIR/ios" ]; then
-            echo "ERROR: ios folder not found in $PROJECT_DIR"
-            exit 1
-          fi
+          echo "Flutter iOS project found at: $PROJECT_DIR"
 
           echo "project_dir=$PROJECT_DIR" >> "$GITHUB_OUTPUT"
 
@@ -53,13 +61,17 @@ jobs:
         working-directory: ${{ steps.flutter_project.outputs.project_dir }}
         run: flutter build ipa --release --no-codesign
 
-      - name: List generated files
+      - name: Show generated files
         shell: bash
         run: |
           PROJECT_DIR="${{ steps.flutter_project.outputs.project_dir }}"
 
-          echo "Generated IPA files:"
-          find "$PROJECT_DIR/build/ios" -type f \( -name "*.ipa" -o -name "*.app" \) -print
+          echo "Searching generated iOS files..."
+
+          find "$PROJECT_DIR/build/ios" \
+            -type f \
+            \( -name "*.ipa" -o -name "*.app" \) \
+            -print
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
