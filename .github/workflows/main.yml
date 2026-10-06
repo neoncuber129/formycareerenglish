@@ -1,33 +1,69 @@
-name: Build iOS IPA
+name: Build Flutter IPA
 
 on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-ios:
     runs-on: macos-latest
-
-    defaults:
-      run:
-        working-directory: app/mobile
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Find Flutter project
+        id: flutter_project
+        shell: bash
+        run: |
+          PUBSPEC=$(find . -name "pubspec.yaml" \
+            -not -path "*/.dart_tool/*" \
+            -not -path "*/build/*" \
+            | head -n 1)
+
+          if [ -z "$PUBSPEC" ]; then
+            echo "ERROR: pubspec.yaml not found"
+            exit 1
+          fi
+
+          PROJECT_DIR=$(dirname "$PUBSPEC")
+
+          echo "Flutter project found at: $PROJECT_DIR"
+
+          if [ ! -d "$PROJECT_DIR/ios" ]; then
+            echo "ERROR: ios folder not found in $PROJECT_DIR"
+            exit 1
+          fi
+
+          echo "project_dir=$PROJECT_DIR" >> "$GITHUB_OUTPUT"
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: stable
+          cache: true
+
+      - name: Flutter version
+        run: flutter --version
 
       - name: Get dependencies
+        working-directory: ${{ steps.flutter_project.outputs.project_dir }}
         run: flutter pub get
 
       - name: Build IPA
-        run: flutter build ipa --release
+        working-directory: ${{ steps.flutter_project.outputs.project_dir }}
+        run: flutter build ipa --release --no-codesign
+
+      - name: List generated files
+        shell: bash
+        run: |
+          PROJECT_DIR="${{ steps.flutter_project.outputs.project_dir }}"
+
+          echo "Generated IPA files:"
+          find "$PROJECT_DIR/build/ios" -type f \( -name "*.ipa" -o -name "*.app" \) -print
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
           name: formycareerenglish-ipa
-          path: app/mobile/build/ios/ipa/*.ipa
+          path: ${{ steps.flutter_project.outputs.project_dir }}/build/ios/ipa/*.ipa
+          if-no-files-found: error
