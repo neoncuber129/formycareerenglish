@@ -1,0 +1,784 @@
+{
+  "@@locale": "zh",
+  "appTitle": "FormyCareer",
+  "navDesktop": "桌面",
+  "navDashboard": "仪表盘",
+  "navCapture": "采集",
+  "navReview": "复习",
+  "navVocabulary": "词汇库",
+  "navGuides": "指南",
+  "navSettings": "设置",
+  "navAbout": "关于",
+  "navWords": "词汇",
+  "settingsTitle": "设置",
+  "settingsSubtitle": "语言和本地偏好",
+  "uiLanguageSectionTitle": "界面语言",
+  "uiLanguageLabel": "应用语言",
+  "uiLanguageDescription": "控制菜单与设置界面文字。翻译说明仍遵循下方的“母语”设置。",
+  "uiLocaleSystem": "跟随系统",
+  "uiLocaleEnglish": "English",
+  "uiLocaleVietnamese": "Tiếng Việt",
+  "uiLocaleJapanese": "日本語",
+  "uiLocaleChinese": "中文（简体）",
+  "uiLocaleKorean": "한국어",
+  "settingsTextScaleSectionTitle": "字体大小",
+  "settingsTextScaleLabel": "界面文字缩放",
+  "settingsTextScaleDescription": "调整桌面窗口与采集弹窗的文字大小，会与 Windows 显示缩放叠加。",
+  "settingsTextScalePercent": "{percent}%",
+  "@settingsTextScalePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "backupSectionTitle": "本地备份与恢复",
+  "backupSectionIntro": "在本地备份和恢复数据。",
+  "defaultBackupFolderTitle": "默认备份文件夹",
+  "defaultBackupFolderDescription": "用于定时自动备份。内置默认位于“文档”文件夹下。下方的“立即备份”仍可选择任意文件夹。",
+  "resolvingPath": "正在解析路径…",
+  "currentPathPrefix": "当前：{path}",
+  "@currentPathPrefix": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "confirmUseFolder": "使用此文件夹",
+  "changeDefaultFolder": "更改默认文件夹",
+  "useAppDefaultFolder": "使用应用默认文件夹",
+  "couldNotUseFolder": "无法使用此文件夹：{error}",
+  "@couldNotUseFolder": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "defaultBackupFolderSet": "默认备份文件夹：{path}",
+  "@defaultBackupFolderSet": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "usingAppDefaultAgain": "已恢复使用应用默认文件夹。",
+  "automaticBackupTitle": "自动备份",
+  "automaticBackupDescription": "按计划将资料库副本保存到上方的默认文件夹。",
+  "repeatEveryLabel": "重复间隔",
+  "backupNow": "立即备份",
+  "restoreFromFile": "从文件恢复",
+  "saveBackupHere": "备份保存到此",
+  "restoreFromThisFile": "从此文件恢复",
+  "backupFilesFilter": "备份文件",
+  "backupCreated": "已创建备份：{path}",
+  "@backupCreated": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "restoredFrom": "已从以下位置恢复：{restored}",
+  "@restoredFrom": {
+    "placeholders": {
+      "restored": {
+        "type": "String"
+      }
+    }
+  },
+  "backupFooterNote": "“立即备份”可选择任意文件夹；自动备份始终使用上方默认文件夹。恢复时请选取 .db 或 .json 文件。",
+  "backupIntervalHourly": "每小时",
+  "backupInterval6h": "每 6 小时",
+  "backupInterval12h": "每 12 小时",
+  "backupIntervalDaily": "每天",
+  "backupInterval2days": "每 2 天",
+  "backupIntervalWeekly": "每周",
+  "backupIntervalEveryHours": "每 {hours} 小时",
+  "@backupIntervalEveryHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "translationSectionTitle": "翻译",
+  "nativeLanguageLabel": "母语",
+  "translationNativeHelp": "翻译与界面解释以此语言显示。",
+  "translationEngineHelp": "为获得最快响应，翻译引擎会自动选择。",
+  "backupErrNoBackupFile": "未找到可恢复的备份文件。",
+  "backupErrSqliteMissing": "未找到 SQLite 备份文件。",
+  "backupErrFileMissing": "未找到所选备份文件。",
+  "backupErrUnsupportedFormat": "不支持的备份格式。请选择 .db 或 .json 文件。",
+  "backupErrInvalidCorrupt": "备份文件无效或已损坏。",
+  "backupErrGeneric": "备份或恢复失败。详情：{error}",
+  "@backupErrGeneric": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "commonCancel": "取消",
+  "commonClose": "关闭",
+  "commonDelete": "删除",
+  "commonSave": "保存",
+  "commonBack": "返回",
+  "commonOk": "确定",
+  "commonRefresh": "刷新",
+  "commonTips": "提示",
+  "commonGranted": "已授权",
+  "commonMissing": "缺失",
+  "commonChecking": "正在检查…",
+  "commonLoading": "加载中…",
+  "commonStudy": "学习",
+  "commonTag": "标签",
+  "commonArchive": "归档",
+  "commonResetSrs": "重置 SRS",
+  "commonActivate": "激活",
+  "cmdCancelEsc": "取消 (Esc)",
+  "cmdOneItemSelected": "已选择 1 项",
+  "cmdManyItemsSelected": "已选择 {count} 项",
+  "@cmdManyItemsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashSubtitle": "学习概览与快捷入口",
+  "dashCouldNotLoadVocab": "无法加载词汇：{error}",
+  "@dashCouldNotLoadVocab": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "dashHeroTitle": "你的学习中心",
+  "dashHeroStatsLine": "即时 {dueNow} 张 · 活跃卡组 {active} · 新卡 {newCount}",
+  "@dashHeroStatsLine": {
+    "placeholders": {
+      "dueNow": {
+        "type": "int"
+      },
+      "active": {
+        "type": "int"
+      },
+      "newCount": {
+        "type": "int"
+      }
+    }
+  },
+  "dashHeroShareCaption": "活跃卡组到期占比",
+  "dashHeroPercentDue": "活跃卡牌中 {percent}% 到期",
+  "@dashHeroPercentDue": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "dashStatDueNowTitle": "现在到期",
+  "dashStatDueNowSubtitle": "可进行 SRS 复习",
+  "dashStatActiveTitle": "活跃卡组",
+  "dashStatActiveSubtitle": "未归档条目",
+  "dashStatNewTitle": "新卡",
+  "dashStatNewSubtitle": "从未复习",
+  "dashStatArchivedTitle": "已归档",
+  "dashStatArchivedSubtitle": "暂停队列",
+  "dashInsightUpcoming": "即将到来复习",
+  "dashInsightDeckComposition": "卡组构成",
+  "dashInsightByLanguage": "按语言",
+  "dashInsightPopularTags": "常用标签",
+  "dashEmptyLangPairs": "尚无语言对。",
+  "dashEmptyTags": "尚无标签 — 采集时添加。",
+  "dashDeckCompositionEmpty": "添加词汇后可查看构成。",
+  "dashLegendNewCount": "新 · {count}",
+  "@dashLegendNewCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashLegendLearningCount": "学习中 (1–6 次) · {count}",
+  "@dashLegendLearningCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashLegendEstablishedCount": "巩固 (>6 次) · {count}",
+  "@dashLegendEstablishedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashDueNowRow": "到期或过期",
+  "dashDueWeekRow": "未来 7 天内（不含今天）",
+  "dashDueLaterRow": "更晚以后",
+  "dashQuickActions": "快捷操作",
+  "dashStartReview": "开始复习",
+  "dashOpenVocabulary": "打开词汇库",
+  "dashCapture": "采集",
+  "dashNothingDueHint": "目前没有到期卡片，仍可在复习标签预习。",
+  "mobileDashSubtitle": "学习快照",
+  "mobileDashLoadFailed": "无法加载词汇。\\n{error}",
+  "@mobileDashLoadFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mobileStatDueSubtitle": "SRS 队列",
+  "mobileStatActiveSubtitle": "卡组中",
+  "mobileStatNewSubtitle": "未复习",
+  "mobileStatArchivedSubtitle": "已暂停",
+  "mobileGoReview": "前往复习",
+  "mobileGoWords": "打开词汇",
+  "guidesPageSubtitle": "采集、复习、词汇与日常使用提示。",
+  "guidesIntroTitle": "界面导览",
+  "guidesIntroBody": "左侧标签页：仪表盘、采集、复习、词汇、本指南、设置、关于。",
+  "guidesCaptureTitle": "采集",
+  "guidesCaptureBody": "快捷键见 Capture 标签；自动采集跟随其他应用选择；弹窗内拖选原文仅翻译片段。",
+  "guidesReviewTitle": "复习（SRS）",
+  "guidesReviewBody": "复习标签运行 SRS；如实评分；Pro 解锁混合复习。",
+  "guidesVocabTitle": "词汇",
+  "guidesVocabBody": "词汇标签内搜索、标签、归档；同步与导出取决于账户与设置。",
+  "guidesSettingsTitle": "设置与备份",
+  "guidesSettingsBody": "设置母语、字号、热键与本地备份文件夹。",
+  "guidesProTitle": "免费与 Pro",
+  "guidesProBody": "免费版可能对桌面捕获保存与弹窗翻译设每日上限（缓存多半不计）；Pro 去广告、混合复习、SRS 与捕获不限等。关于标签购买。",
+  "aboutPageSubtitle": "应用信息与许可",
+  "aboutTagline": "跨平台语言学习工作台。",
+  "aboutVersionPrefix": "版本 {version}",
+  "@aboutVersionPrefix": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutUpdatesSection": "更新与 Pro",
+  "aboutLatestVersionLabel": "最新版本：{version}",
+  "@aboutLatestVersionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutUpdateAvailable": "此应用有可用更新。",
+  "aboutUsingLatest": "您正在使用最新版本。",
+  "aboutReleaseNotesPrefix": "发行说明：{notes}",
+  "@aboutReleaseNotesPrefix": {
+    "placeholders": {
+      "notes": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutMinVersionWarning": "低于最低支持版本。",
+  "aboutPlanPro": "当前方案：Pro",
+  "aboutPlanFree": "当前方案：免费",
+  "aboutProKeyInstructions": "使用 Lemon Squeezy 邮件中的许可证密钥。",
+  "aboutCheckUpdates": "检查更新",
+  "aboutCheckingUpdates": "正在检查…",
+  "aboutDownloadLatest": "下载最新版",
+  "aboutVisitProWebsite": "前往网站购买 Pro",
+  "aboutActivating": "正在激活…",
+  "aboutActivatePro": "激活 Pro",
+  "aboutActivateProTitle": "激活 Pro",
+  "aboutActivateProPlaceholder": "粘贴 Lemon Squeezy 邮件中的密钥",
+  "aboutUpdateCheckDone": "已完成更新检查",
+  "aboutWhatProUnlocks": "Pro 权益",
+  "aboutOneLicense": "一份许可证可同时激活桌面与移动版。",
+  "aboutProBenefit1": "桌面端 Pro 无横幅广告。",
+  "aboutProBenefit2": "混合复习模式。",
+  "aboutProBenefit3": "SRS 每日评分不限（免费每日 100）。",
+  "aboutProBenefit4": "桌面端从捕获保存生词每日不限（免费版有每日上限）。",
+  "aboutProBenefit5": "桌面捕获弹窗翻译请求每日不限；缓存命中不计入额度（免费版有每日上限）。",
+  "aboutSupportLegal": "支持与法律信息",
+  "aboutSupportEmailPrefix": "支持邮箱：{email}",
+  "@aboutSupportEmailPrefix": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutCopySupportEmail": "复制支持邮箱",
+  "aboutOpenSourceLicenses": "开源许可",
+  "aboutPrivacyPolicy": "隐私政策",
+  "aboutTermsOfService": "服务条款",
+  "aboutSupportEmailCopied": "已复制支持邮箱",
+  "capturePageSubtitle": "自动采集、快捷键与同步",
+  "captureAutoCaptureTitle": "自动采集",
+  "captureAutoCaptureBody": "开启：跟随其他应用鼠标选择；关闭：仅用快捷键。",
+  "captureAutoToggleShortcutLine": "使用 {shortcut} 切换。",
+  "@captureAutoToggleShortcutLine": {
+    "placeholders": {
+      "shortcut": {
+        "type": "String"
+      }
+    }
+  },
+  "captureHotkeyToggleLabel": "切换自动采集热键",
+  "capturePressNewShortcut": "按下新快捷键",
+  "captureAutoStatusOn": "开",
+  "captureAutoStatusOff": "关",
+  "captureAutoToast": "自动采集：{status} ({hotkey})",
+  "@captureAutoToast": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      },
+      "hotkey": {
+        "type": "String"
+      }
+    }
+  },
+  "captureHotkeySetToast": "自动采集热键设为 Ctrl+Shift+{key}",
+  "@captureHotkeySetToast": {
+    "placeholders": {
+      "key": {
+        "type": "String"
+      }
+    }
+  },
+  "captureVisualGuidesCardTitle": "图示指南",
+  "captureVisualGuidesAutoHeading": "自动采集流程",
+  "captureVisualGuidesOcrHeading": "屏幕区域 OCR",
+  "captureVisualGuidesPopupRefineHint": "提示：在采集弹出窗口中拖选原文片段，可仅翻译该短语；不关窗口可多次调整选区。",
+  "captureAutoFlowSelectLabel": "选择",
+  "captureAutoFlowPauseLabel": "暂停",
+  "captureAutoFlowPopupLabel": "查阅",
+  "captureAutoFlowCaption": "开启后为三步（其他应用）。",
+  "captureAutoVisualGuideLink": "分步图解指南…",
+  "captureDlgAutoCaptureTitle": "自动采集如何工作",
+  "captureDlgAutoCaptureIntro": "开启后，Formycareer 会监听其他程序中的鼠标选字（本应用窗口内不计）。\\n\\n下图示意流程。",
+  "captureDlgAutoCaptureStep1Title": "1. 在其他应用中选中文本",
+  "captureDlgAutoCaptureStep1Body": "浏览器或 PDF：拖动选中，或双击单词。",
+  "captureDlgAutoCaptureStep2Title": "2. 松开鼠标稍等",
+  "captureDlgAutoCaptureStep2Body": "让高亮稳定后再读取。",
+  "captureDlgAutoCaptureStep3Title": "3. 弹出查阅窗口",
+  "captureDlgAutoCaptureStep3Body": "弹出窗口显示全文以便翻译或保存；在原文区域拖选即可只翻译该片段。",
+  "captureDlgAutoCaptureStep4Title": "4. 继续在原文中选择片段",
+  "captureDlgAutoCaptureStep4Body": "在弹出窗口的原文区域可随时拖选另一段文字——每次选择仅翻译该片段，可反复操作而无需关闭窗口。",
+  "captureDlgAutoCaptureSchemeCaption": "示意图（非真实界面）",
+  "captureOcrFlowHotkeyLabel": "快捷键",
+  "captureOcrFlowRegionLabel": "框选区域",
+  "captureOcrFlowResultLabel": "识别文字",
+  "captureOcrFlowCaption": "Ctrl+Shift+X 后在屏幕上框选文字。",
+  "captureOcrVisualGuideLink": "OCR 分步图解…",
+  "captureDlgOcrGuideTitle": "区域 OCR 如何使用",
+  "captureDlgOcrGuideIntro": "区域 OCR 从所选屏幕区域识别文字；与自动采集无关。\\n\\n下图示意步骤。",
+  "captureDlgOcrStep1Title": "1. 开始区域采集",
+  "captureDlgOcrStep1Body": "在其他应用中按 Ctrl+Shift+X，或本窗口聚焦时使用应用内快捷键。",
+  "captureDlgOcrStep2Title": "2. 拖动矩形框选",
+  "captureDlgOcrStep2Body": "屏幕变暗后，拖动框住要识别的文字或图像。",
+  "captureDlgOcrStep3Title": "3. 确认并查看结果",
+  "captureDlgOcrStep3Body": "确认后，识别文字在弹出窗口打开，可翻译或保存。",
+  "captureDlgOcrStep4Title": "4. 继续在原文中选择片段",
+  "captureDlgOcrStep4Body": "在弹出窗口的原文区域可随时拖选另一段文字——每次选择仅翻译该片段，可反复操作而无需关闭窗口。",
+  "captureDlgOcrSchemeCaption": "示意图（非真实界面）",
+  "captureActiveBehaviorNote": "在其他应用选中后，短暂停顿后读取；剪贴板可能会变化。",
+  "captureShortcutsSectionTitle": "采集",
+  "captureShortcutsSectionBody": "Ctrl+Shift+D（文本）、Ctrl+Shift+X（区域）。",
+  "captureTextFromSelection": "从选择获取文本",
+  "captureImageRegionOcr": "图像 / 区域 OCR",
+  "capturePermissionsTitle": "权限",
+  "captureAccessibilityGrantedLine": "辅助功能：{state}",
+  "@captureAccessibilityGrantedLine": {
+    "placeholders": {
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "captureScreenRecordingGrantedLine": "屏幕录制：{state}",
+  "@captureScreenRecordingGrantedLine": {
+    "placeholders": {
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "capturePermRefresh": "刷新",
+  "capturePermRequest": "请求缺失权限",
+  "capturePermChecking": "正在检查…",
+  "capturePermAllGranted": "已获得全部采集权限。",
+  "capturePermSomeMissing": "仍有缺失权限，请在系统设置开启。",
+  "captureHotkeyUnavailable": "全局热键不可用，请使用应用内快捷键。",
+  "captureDlgTextCaptureTitle": "文本采集",
+  "captureDlgTextCaptureBody": "手动：Ctrl+Shift+D。\\n自动：跟随拖动选择与双击读取高亮文本；不使用 UIA 或剪贴板监听。",
+  "captureDlgImageCaptureTitle": "图像 / 区域 OCR",
+  "captureDlgImageCaptureBody": "Ctrl+Shift+X 全屏框选 OCR。",
+  "captureDlgTipsTitle": "采集提示",
+  "captureDlgTipsBody": "长时间写作时可关闭以免影响剪贴板。",
+  "captureHotkeyDlgTitle": "按下新热键",
+  "captureHotkeyDlgHintInitial": "按 Ctrl+Shift+字母或数字",
+  "captureHotkeyDlgHintRetry": "需要 Ctrl+Shift 加字母或数字",
+  "vocabPageSubtitle": "搜索筛选与管理卡组",
+  "vocabStudySelected": "学习所选",
+  "vocabStudyFiltered": "按筛选学习",
+  "vocabSelectBeforeStudy": "请先选择词汇。",
+  "vocabNoMatchFilters": "没有匹配筛选的词。",
+  "vocabTipsTitle": "词汇提示",
+  "vocabTipsBody": "批量操作前先按语言和来源筛选。",
+  "vocabDeleteTitle": "删除已保存的词？",
+  "vocabDeleteBodyOne": "将永久删除所选词条。",
+  "vocabDeleteBodyMany": "将永久删除所选 {count} 条。",
+  "@vocabDeleteBodyMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "vocabSearchPlaceholder": "搜索词义或标签",
+  "vocabAllLanguages": "全部语言",
+  "vocabAllSources": "全部来源",
+  "vocabAllTags": "全部标签",
+  "vocabFilterActive": "活跃",
+  "vocabFilterArchived": "归档",
+  "vocabFilterAll": "全部",
+  "vocabClearFilters": "清除筛选",
+  "vocabTtsSectionTitle": "Google Cloud 文字转语音",
+  "vocabTtsSectionBody": "将长文本合成为语音（在 Cloud TTS 限制内自动分段）。需要启用 Cloud Text-to-Speech API 并配置 API 密钥。",
+  "vocabTtsApiKeyPlaceholder": "API 密钥（安全保存在本机）",
+  "vocabTtsSaveApiKey": "保存密钥",
+  "vocabTtsApiKeySaved": "已保存 API 密钥。",
+  "vocabTtsApiKeyFromBuild": "正在使用应用构建配置中的 API 密钥。",
+  "vocabTtsTextPlaceholder": "粘贴或输入要朗读的文本（支持长文）",
+  "vocabTtsStats": "UTF-8 大小：{bytes} · 请求分段：{segments}",
+  "@vocabTtsStats": {
+    "placeholders": {
+      "bytes": {"type": "int"},
+      "segments": {"type": "int"}
+    }
+  },
+  "vocabTtsVoiceLabel": "语音",
+  "vocabTtsVoiceCustom": "自定义语音…",
+  "vocabTtsCustomVoicePlaceholder": "语音名称（如 en-US-Neural2-J）",
+  "vocabTtsCustomLangPlaceholder": "languageCode（如 en-US）",
+  "vocabTtsSpeakingRate": "语速",
+  "vocabTtsGeneratePlay": "合成并播放",
+  "vocabTtsSaveMp3": "保存 MP3…",
+  "vocabTtsNeedApiKey": "请先添加 Google Cloud Text-to-Speech API 密钥。",
+  "vocabTtsNeedText": "请输入要合成的文本。",
+  "vocabTtsVoiceInvalid": "请填写语音名称和 languageCode。",
+  "vocabTtsError": "{message}",
+  "@vocabTtsError": {"placeholders": {"message": {"type": "String"}}},
+  "vocabTtsSavedFile": "已保存音频：{path}",
+  "@vocabTtsSavedFile": {"placeholders": {"path": {"type": "String"}}},
+  "vocabEmptyLibrary": "暂无词汇。",
+  "vocabColTermMeaning": "词条 / 释义",
+  "vocabColSource": "来源",
+  "vocabColTags": "标签",
+  "vocabColNextReview": "下次复习",
+  "vocabCtxMenuTag": "标签",
+  "vocabCtxMenuArchive": "归档",
+  "vocabCtxMenuResetSrs": "重置 SRS",
+  "vocabCtxMenuDelete": "删除",
+  "bulkTagCreateTitle": "新建标签",
+  "bulkTagCreatePlaceholder": "输入新标签",
+  "bulkTagRenameTitle": "重命名标签",
+  "bulkTagRenamePlaceholder": "输入标签",
+  "bulkTagDeleteTitle": "删除标签",
+  "bulkTagDeleteBody": "从所有词条移除「{tag}」？",
+  "@bulkTagDeleteBody": {
+    "placeholders": {
+      "tag": {
+        "type": "String"
+      }
+    }
+  },
+  "bulkTagFilterPlaceholder": "筛选标签",
+  "bulkTagClearSelections": "清除标签选择",
+  "bulkTagRename": "重命名",
+  "bulkTagDelete": "删除",
+  "bulkTagApply": "应用",
+  "bulkTagNewBadge": "新",
+  "bulkTagPanelTitle": "批量标签",
+  "bulkTagEmptyLibrary": "词库尚无标签。",
+  "bulkTagNoMatchFilter": "没有匹配筛选的标签。",
+  "bulkTagValidationEmpty": "标签名称不能为空。",
+  "bulkTagValidationDuplicate": "标签已存在。",
+  "bulkTagManageTooltip": "管理标签",
+  "commonCreate": "创建",
+  "customStudyTitle": "自定义学习",
+  "customStudyEntriesCount": "匹配所选：{count} 条",
+  "@customStudyEntriesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "customStudyMaxLabel": "最大卡片数（留空为全部）",
+  "customStudyMaxPlaceholder": "例如 50",
+  "customStudyRandomOrder": "随机顺序",
+  "customStudyCram": "突击（不保存调度）",
+  "customStudyStart": "开始",
+  "reviewSrsTitle": "SRS 复习",
+  "reviewCramBadge": "突击",
+  "reviewQueueCounts": "新 {newCount} · 学习中 {learningCount} · 复习 {reviewCount}",
+  "@reviewQueueCounts": {
+    "placeholders": {
+      "newCount": {
+        "type": "int"
+      },
+      "learningCount": {
+        "type": "int"
+      },
+      "reviewCount": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewAutoAudio": "自动音频",
+  "reviewAllLanguages": "全部语言",
+  "reviewLanguageFilterTooltip": "语言筛选",
+  "reviewMixedProOnly": "混合模式需 Pro。",
+  "reviewMixedEnable": "启用混合",
+  "reviewMixedLocked": "混合（Pro）",
+  "reviewBasicMode": "基础模式",
+  "reviewExitStudy": "退出学习",
+  "reviewNoCardsDue": "没有到期卡片。",
+  "reviewFinishing": "正在结束会话…",
+  "reviewCompleted": "复习完成。",
+  "reviewReviewsToday": "今日复习：{used}/{limit}",
+  "@reviewReviewsToday": {
+    "placeholders": {
+      "used": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewTipsTitle": "复习提示",
+  "reviewTipsBody": "Enter 翻面/判定，Ctrl+Enter 播放音频。",
+  "reviewGradeHintForward": "Enter：翻面 · Ctrl+Enter：音频",
+  "reviewGradeHintReverse": "Enter：检查 · Ctrl+Enter：音频",
+  "reviewAudioFailed": "无法播放音频。",
+  "reviewPlayTerm": "播放词条",
+  "reviewPlayAudio": "播放音频",
+  "reviewMeaning": "释义",
+  "reviewListenType": "听写",
+  "reviewListenInstructions": "播放音频并输入原词。",
+  "reviewTypeOriginalPlaceholder": "输入原文",
+  "reviewCheckAnswer": "检查答案（Enter）",
+  "reviewCorrect": "正确",
+  "reviewIncorrect": "错误",
+  "reviewYourAnswer": "你的答案：",
+  "reviewExpected": "应为：",
+  "reviewAnswerEmptyMarker": "(空)",
+  "reviewGradeAgain": "重来 (1)",
+  "reviewGradeHard": "困难 (2)",
+  "reviewGradeGood": "良好 (3)",
+  "reviewGradeEasy": "简单 (4)",
+  "reviewGradeNameAgain": "again",
+  "reviewGradeNameHard": "hard",
+  "reviewGradeNameGood": "good",
+  "reviewGradeNameEasy": "easy",
+  "reviewSummaryWordsTitle": "刚复习的词 ({count})",
+  "@reviewSummaryWordsTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewSummaryClose": "关闭",
+  "reviewSummaryTitle": "学习会话总结",
+  "reviewSummaryGreatJob": "太棒了，{name}！",
+  "@reviewSummaryGreatJob": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewSummaryEncourage": "你已完成今日目标。",
+  "reviewSummaryStatReviewed": "已复习",
+  "reviewSummaryStatMastered": "掌握良好",
+  "reviewSummaryStatTime": "用时",
+  "reviewSummaryBackDashboard": "返回仪表盘",
+  "reviewSummarySeeWords": "查看刚复习的词",
+  "reviewSummaryCloudSyncing": "正在同步云端…",
+  "reviewSummaryCloudOk": "云端同步成功",
+  "reviewSummaryCloudFail": "云端同步失败",
+  "reviewSummaryYou": "你",
+  "reviewDurSeconds": "{seconds}秒",
+  "@reviewDurSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurMinutes": "{minutes}分钟",
+  "@reviewDurMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurMinutesSeconds": "{minutes}分{seconds}秒",
+  "@reviewDurMinutesSeconds": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurHours": "{hours}小时",
+  "@reviewDurHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurHoursMinutes": "{hours}小时{minutes}分",
+  "@reviewDurHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "captureSavePhrase": "保存短语",
+  "captureSaveLine": "保存整行",
+  "captureWholeLine": "整行",
+  "captureListenSource": "收听原文",
+  "captureNoTextDetected": "未检测到文本",
+  "captureAddTagLabel": "添加标签",
+  "captureTagHint": "输入标签",
+  "captureAutoRecentTag": "自动填入最近标签",
+  "captureNoRecentTagsYet": "尚无最近标签。",
+  "captureSavedToast": "已保存 ✓",
+  "captureDailySaveLimitReached": "已达到今日保存上限（每天 {limit} 次）。升级 Pro 可无限制保存。",
+  "@captureDailySaveLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "captureDailyTranslateLimitReached": "已达到今日翻译次数上限（每天 {limit} 次）。升级 Pro 可无限制调用。",
+  "@captureDailyTranslateLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsTagManagerEmpty": "暂无标签。",
+  "meaningTranslating": "翻译中…",
+  "meaningNoTranslationYet": "尚无翻译。",
+  "meaningDictHeading": "英语释义",
+  "meaningFieldLabel": "释义",
+  "meaningFieldHint": "编辑翻译",
+  "meaningPlayPronunciation": "播放发音",
+  "meaningPlay": "播放",
+  "meaningPause": "暂停",
+  "meaningPhraseMarker": "(短语)",
+  "settingsReviewAudioSection": "复习音频",
+  "settingsAutoPlayAudioTitle": "新卡片自动播放音频",
+  "settingsRememberTagTitle": "添加词语时记住上次标签",
+  "settingsLocalBackupTitle": "本地备份",
+  "settingsBackupNowJson": "立即备份（JSON）",
+  "settingsImportBackup": "导入备份 (.db / .json)",
+  "settingsBackupFootnote": "使用签名 JSON 或 .db/.json。",
+  "settingsManageTagsTitle": "管理标签",
+  "settingsManageTagsSubtitle": "在所有词条重命名/删除标签。",
+  "settingsReplaceVocabTitle": "替换本地词汇？",
+  "settingsReplaceVocabBody": "设备上的词将被备份替换，不可撤销。",
+  "settingsChooseFile": "选择文件",
+  "settingsImporting": "正在导入…",
+  "settingsImportedCount": "已导入 {count} 条 ({kind})。",
+  "@settingsImportedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "kind": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsExportCancelled": "已取消导出",
+  "settingsSavedPath": "已保存：{path}",
+  "@settingsSavedPath": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsExportFailed": "导出失败：{error}",
+  "@settingsExportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsImportFailed": "导入失败：{error}",
+  "@settingsImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLanguageLoadError": "语言设置错误：{error}",
+  "@settingsLanguageLoadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "commonErrorPrefix": "错误：{error}",
+  "@commonErrorPrefix": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "dashLearnerPickerLabel": "Who is learning?",
+  "dashLearnerPickerNewButton": "新建",
+  "localProfilesSectionTitle": "Local learners",
+  "localProfilesSectionDescription": "Each learner has a separate vocabulary library on this device. Switch profile to study a different word set.",
+  "localProfileDefaultName": "Default",
+  "localProfileActiveBadge": "Active",
+  "localProfileUseAction": "Use",
+  "localProfileAddAction": "Add learner",
+  "localProfileRenameAction": "Rename",
+  "localProfileDeleteAction": "Remove",
+  "localProfileAddTitle": "New learner",
+  "localProfileRenameTitle": "Rename learner",
+  "localProfileNameLabel": "Display name",
+  "localProfileDeleteConfirmTitle": "Remove learner?",
+  "localProfileDeleteConfirmBody": "Their vocabulary stays on this device until you clear app data. You can add this learner again anytime."
+}

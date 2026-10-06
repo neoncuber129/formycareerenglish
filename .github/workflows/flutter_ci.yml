@@ -1,0 +1,72 @@
+# Runs static analysis and tests for desktop + shared packages on push/PR.
+# Does not produce release binaries (add a separate workflow if needed).
+
+name: Flutter CI
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "apps/desktop/**"
+      - "apps/mobile/**"
+      - "packages/**"
+      - ".github/workflows/flutter_ci.yml"
+  pull_request:
+    branches: [main, master]
+    paths:
+      - "apps/desktop/**"
+      - "apps/mobile/**"
+      - "packages/**"
+      - ".github/workflows/flutter_ci.yml"
+
+jobs:
+  desktop:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/desktop
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+      # Fail on analyzer errors only; warnings (e.g. Isar codegen) / infos (deprecations) do not fail CI.
+      - run: flutter analyze --no-fatal-warnings --no-fatal-infos
+      - run: flutter test --no-pub
+
+  mobile_analyze:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/mobile
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+      - run: flutter analyze --no-fatal-warnings --no-fatal-infos
+
+  app_l10n:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/app_l10n
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+      - run: flutter analyze --no-fatal-warnings --no-fatal-infos
+      - run: flutter gen-l10n

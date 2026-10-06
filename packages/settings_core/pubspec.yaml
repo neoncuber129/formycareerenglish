@@ -1,0 +1,15 @@
+name: settings_core
+description: Shared language and capture preferences for FormyCareer apps.
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.0.3
+  shared_models:
+    path: ../shared_models
+  shared_preferences: ^2.5.5

@@ -1,0 +1,285 @@
+[
+  {
+    "title": "Inside FormyCareer: Capture, Review, and Retain Vocabulary",
+    "url": "/formycareer-app-guide.html",
+    "date": "May 1, 2026",
+    "description": "A full walkthrough of the app workflow with capture, SRS review, and vocabulary management screens.",
+    "image": "/app-shot-review.png",
+    "imageAlt": "FormyCareer review screen with spaced repetition controls.",
+    "tags": [
+      "product",
+      "learning"
+    ],
+    "titleVi": "Bên trong FormyCareer: Thu thập, ôn tập và giữ từ vựng",
+    "titleZh": "走近 FormyCareer：收录、复习与巩固词汇",
+    "descriptionVi": "Hướng dẫn luồng làm việc của app: thu thập từ, ôn SRS và quản lý từ vựng.",
+    "descriptionZh": "完整演示应用流程：收录词汇、SRS 复习与词汇管理界面。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "90-Day Roadmap to Transition Your Career",
+    "url": "/roadmap-90-ngay.html",
+    "date": "May 1, 2026",
+    "description": "A step-by-step framework to define goals, focus on core skills, and build weekly momentum.",
+    "image": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Career roadmap planning on a desk with notebook and laptop.",
+    "tags": [
+      "career"
+    ],
+    "titleVi": "Lộ trình 90 ngày để chuyển hướng sự nghiệp",
+    "titleZh": "90 天职业转型路线图",
+    "descriptionVi": "Khung việc theo bước: xác định mục tiêu, kỹ năng lõi và động lực hàng tuần.",
+    "descriptionZh": "分步框架：明确目标、聚焦核心技能并建立每周动能。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "How to Build a CV That Gets Interview Calls",
+    "url": "/xay-dung-cv-thuyet-phuc.html",
+    "date": "May 1, 2026",
+    "description": "Structure your CV, present measurable impact, and avoid mistakes that sink applications.",
+    "image": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Resume writing setup with laptop and printed CV.",
+    "tags": [
+      "career",
+      "interview"
+    ],
+    "titleVi": "Cách viết CV để được gọi phỏng vấn",
+    "titleZh": "如何写出能获得面试机会的简历",
+    "descriptionVi": "Cấu trúc CV, thể hiện kết quả đo lường được và tránh lỗi khiến hồ sơ bị loại.",
+    "descriptionZh": "结构化简历、呈现可量化成果，并避开常见淘汰错误。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "Effective Self-Learning for Busy Professionals",
+    "url": "/ky-nang-tu-hoc-hieu-qua.html",
+    "date": "May 1, 2026",
+    "description": "Study consistently after work with focus blocks, recall practice, and small deliverables.",
+    "image": "https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Self-learning workspace with study notes and laptop.",
+    "tags": [
+      "learning",
+      "productivity"
+    ],
+    "titleVi": "Tự học hiệu quả cho người đi làm bận",
+    "titleZh": "忙碌职场人的高效自学方法",
+    "descriptionVi": "Học đều sau giờ làm với khối thời gian tập trung, nhớ lại chủ động và mốc nhỏ.",
+    "descriptionZh": "下班后用工夫块、主动回忆与小交付保持稳定进步。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "Interview Preparation: From CV Review to Real Answers",
+    "url": "/chuan-bi-phong-van.html",
+    "date": "May 1, 2026",
+    "description": "Research the role, prepare STAR stories, and walk in with a calm checklist.",
+    "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Two professionals in a formal interview conversation.",
+    "tags": [
+      "interview",
+      "career"
+    ],
+    "titleVi": "Chuẩn bị phỏng vấn: Từ CV đến câu trả lời thật",
+    "titleZh": "面试准备：从简历复盘到落地回答",
+    "descriptionVi": "Nghiên cứu vị trí, chuẩn bị câu chuyện STAR và checklist để vào phòng tự tin.",
+    "descriptionZh": "调研岗位、准备 STAR 故事，并用清单稳住临场发挥。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "Time Management for Early-Career Professionals",
+    "url": "/quan-ly-thoi-gian-nguoi-moi.html",
+    "date": "May 1, 2026",
+    "description": "Prioritize by impact, protect deep work, and review what actually moved the needle.",
+    "image": "https://images.pexels.com/photos/3243/pen-calendar-to-do-checklist.jpg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Weekly calendar and checklist for planning tasks.",
+    "tags": [
+      "productivity"
+    ],
+    "titleVi": "Quản lý thời gian cho người mới vào nghề",
+    "titleZh": "初入职场者的时间管理",
+    "descriptionVi": "Ưu tiên theo tác động, bảo vệ deep work và xem lại việc thực sự tạo giá trị.",
+    "descriptionZh": "按影响力排序、保护深度工作并复盘真正推动结果的事项。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "Vocabulary Strategy for IT Roles",
+    "url": "/learning-vocabulary-for-it-roles.html",
+    "date": "May 1, 2026",
+    "description": "Collect terms by technical context and build retention for daily IT communication.",
+    "image": "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Developer workspace with laptop and code editor.",
+    "tags": [
+      "learning",
+      "career"
+    ],
+    "titleVi": "Chiến lược từ vựng cho vai trò IT",
+    "titleZh": "IT 岗位的词汇策略",
+    "descriptionVi": "Thu thập thuật ngữ theo ngữ cảnh kỹ thuật và giữ nhớ cho giao tiếp hàng ngày.",
+    "descriptionZh": "按技术语境收集术语，并通过复习巩固日常沟通用语。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "How Spaced Repetition Works for Professionals",
+    "url": "/spaced-repetition-explained.html",
+    "date": "May 1, 2026",
+    "description": "A practical explanation of spaced repetition and how to apply it in a full-time schedule.",
+    "image": "https://images.pexels.com/photos/4050308/pexels-photo-4050308.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Desk planner and study notes representing repeated review.",
+    "tags": [
+      "learning",
+      "product"
+    ],
+    "titleVi": "Spaced repetition hoạt động thế nào với người đi làm",
+    "titleZh": "间隔复习如何帮助职场人",
+    "descriptionVi": "Giải thích thực tế về spaced repetition và cách áp dụng khi làm full-time.",
+    "descriptionZh": "通俗解释间隔复习及其在全职日程中的应用方式。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "LinkedIn Profile Checklist for Better Recruiter Response",
+    "url": "/linkedin-profile-checklist.html",
+    "date": "May 1, 2026",
+    "description": "A practical checklist to improve profile clarity, discoverability, and recruiter response quality.",
+    "image": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Professional networking and profile review session.",
+    "tags": [
+      "career"
+    ],
+    "titleVi": "Checklist LinkedIn để nhà tuyển dụng phản hồi tốt hơn",
+    "titleZh": "让猎头更愿意回复的 LinkedIn 自检清单",
+    "descriptionVi": "Sửa rõ ràng hồ sơ, khả năng được tìm thấy và chất lượng phản hồi.",
+    "descriptionZh": "提升简介清晰度、可发现性与雇主回复质量。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "Salary Negotiation Basics for Early-Career Professionals",
+    "url": "/salary-negotiation-basics.html",
+    "date": "May 1, 2026",
+    "description": "Use a structured salary negotiation framework with evidence, boundaries, and confidence.",
+    "image": "https://images.pexels.com/photos/4386367/pexels-photo-4386367.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Negotiation meeting with notebook and salary discussion.",
+    "tags": [
+      "career"
+    ],
+    "titleVi": "Cơ bản đàm phán lương cho người mới sự nghiệp",
+    "titleZh": "初级从业者的薪资谈判基础",
+    "descriptionVi": "Khung đàm phán có minh chứng, ranh giới và sự tự tin.",
+    "descriptionZh": "用证据、边界与信心的结构化薪资谈判框架。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "Portfolio Projects That Impress Hiring Managers",
+    "url": "/portfolio-projects-that-impress.html",
+    "date": "May 1, 2026",
+    "description": "Build portfolio projects that show judgment, outcomes, and communication quality.",
+    "image": "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Laptop showing project dashboard and development notes.",
+    "tags": [
+      "career",
+      "product"
+    ],
+    "titleVi": "Dự án portfolio khiến hiring manager ấn tượng",
+    "titleZh": "给用人经理留下深刻印象的作品集项目",
+    "descriptionVi": "Làm portfolio thể hiện phán đoán, kết quả và khả năng truyền đạt.",
+    "descriptionZh": "打造体现判断力、成果与沟通力的作品集项目。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "Remote Work Readiness Checklist",
+    "url": "/remote-work-readiness.html",
+    "date": "May 1, 2026",
+    "description": "Prepare for remote roles with async communication, execution discipline, and workflow hygiene.",
+    "image": "https://images.pexels.com/photos/4050284/pexels-photo-4050284.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Professional remote workstation with laptop and notebook.",
+    "tags": [
+      "productivity",
+      "career"
+    ],
+    "titleVi": "Checklist sẵn sàng làm việc remote",
+    "titleZh": "远程工作就绪清单",
+    "descriptionVi": "Chuẩn bị vai remote với giao tiếp bất đồng bộ, kỷ luật và quy trình làm việc.",
+    "descriptionZh": "用异步沟通、执行力与工作流卫生准备远程岗位。",
+    "dateVi": "1 tháng 5, 2026",
+    "dateZh": "2026年5月1日"
+  },
+  {
+    "title": "Technical Writing Habits That Speed Up Engineering Teams",
+    "titleVi": "Thói quen viết kỹ thuật giúp team engineering nhanh hơn",
+    "titleZh": "加速工程团队推进的技术写作习惯",
+    "url": "/technical-writing-for-engineers.html",
+    "date": "May 2, 2026",
+    "dateVi": "2 tháng 5, 2026",
+    "dateZh": "2026年5月2日",
+    "description": "Structure specs, RFCs, and incident notes so readers ship faster with fewer loops.",
+    "descriptionVi": "Cấu trúc spec, RFC và incident note để người đọc ship nhanh hơn, ít vòng lặp.",
+    "descriptionZh": "把规格说明、RFC 与事故记录写得让读者更快交付、减少来回。",
+    "image": "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Developer typing documentation on a laptop.",
+    "tags": [
+      "career",
+      "productivity"
+    ]
+  },
+  {
+    "title": "Useful English Phrases for Remote Meetings",
+    "titleVi": "Mẫu câu tiếng Anh hữu ích cho họp remote",
+    "titleZh": "远程会议实用的英语表达",
+    "url": "/meeting-english-remote-teams.html",
+    "date": "May 2, 2026",
+    "dateVi": "2 tháng 5, 2026",
+    "dateZh": "2026年5月2日",
+    "description": "Polished phrases for agendas, clarifying scope, summarizing decisions, and follow-ups.",
+    "descriptionVi": "Cụm tổ chức agenda, làm rõ phạm vi, tóm quyết định và follow-up.",
+    "descriptionZh": "涵盖议程推进、澄清范围、总结决议与跟进的得体说法。",
+    "image": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Team video conference with laptops.",
+    "tags": [
+      "career",
+      "learning"
+    ]
+  },
+  {
+    "title": "Managing Cognitive Load While You Upskill",
+    "titleVi": "Giảm tải nhận thức khi vừa làm vừa học thêm",
+    "titleZh": "在职进阶时如何管理认知负荷",
+    "url": "/cognitive-load-and-upskilling.html",
+    "date": "May 2, 2026",
+    "dateVi": "2 tháng 5, 2026",
+    "dateZh": "2026年5月2日",
+    "description": "Design study blocks, reduce context switching, and keep notes that survive busy weeks.",
+    "descriptionVi": "Thiết kế khối học, giảm chuyển ngữ cảnh và ghi chú chịu được tuần bận.",
+    "descriptionZh": "规划学习块、减少上下文切换，并让笔记扛得住高强度排期。",
+    "image": "https://images.pexels.com/photos/3771079/pexels-photo-3771079.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Professional thinking over notes and laptop.",
+    "tags": [
+      "learning",
+      "productivity"
+    ]
+  },
+  {
+    "title": "Your First 90 Days in a New Role: A Practical Guide",
+    "titleVi": "90 ngày đầu ở vị trí mới: Hướng dẫn thực tế",
+    "titleZh": "新岗位首 90 天：实操指南",
+    "url": "/first-90-days-new-job.html",
+    "date": "May 2, 2026",
+    "dateVi": "2 tháng 5, 2026",
+    "dateZh": "2026年5月2日",
+    "description": "Align expectations early, map stakeholders, deliver small wins, and capture vocabulary.",
+    "descriptionVi": "Sớm thống nhất kỳ vọng, lập bản đồ stakeholder, tạo win nhỏ và ghi từ vựng.",
+    "descriptionZh": "尽早对齐期望、梳理干系人、拿下可见小胜利并沉淀术语词汇。",
+    "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "imageAlt": "Modern office teamwork discussion.",
+    "tags": [
+      "career"
+    ]
+  }
+]

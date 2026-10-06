@@ -1,0 +1,31 @@
+{
+  "latestVersion": "1.0.0",
+  "minSupportedVersion": "1.0.0",
+  "downloadUrl": "https://formycareer.vercel.app",
+  "proWebsiteUrl": "https://formycareer.vercel.app",
+  "proProvider": "lemonsqueezy",
+  "gumroadProductPermalink": "",
+  "gumroadVerifyUrl": "https://api.gumroad.com/v2/licenses/verify",
+  "gumroadUseIncrementUsesCount": false,
+  "lemonLicenseProxyUrl": "https://formycareer-license-verify.maivantungqy98.workers.dev/lemon/verify",
+  "lemonLicenseProxyAuthToken": "",
+  "lemonVerifyUrl": "https://api.lemonsqueezy.com/v1/licenses/validate",
+  "lemonActivateUrl": "https://api.lemonsqueezy.com/v1/licenses/activate",
+  "lemonInstanceName": "FormyCareer Desktop",
+  "lemonStoreName": "Lemon Squeezy",
+  "lemonExpectedStoreId": "",
+  "lemonExpectedProductId": "",
+  "lemonExpectedVariantId": "",
+  "licenseVerifyUrl": "https://formycareer-license-verify.maivantungqy98.workers.dev/verify-license",
+  "forceUpdate": false,
+  "releaseNotes": "Initial public desktop release. Pro removes banner ads on desktop, unlocks mixed review, unlimited SRS grades per day, and unlimited desktop capture saves and popup translation calls per day (Free uses fair daily caps from server config). Visit the website to buy Pro.",
+  "freeDailyReviewLimit": 100,
+  "freeDailyVocabSaveLimit": 150,
+  "freeDailyTranslateCallLimit": 250,
+  "capturePopupBannerEnabled": true,
+  "capturePopupBannerCooldownMinutes": 15,
+  "validProKeys": [
+    "FORMYCAREER-PRO-2026",
+    "FORMYCAREER-DEV-TESTKEY"
+  ]
+}

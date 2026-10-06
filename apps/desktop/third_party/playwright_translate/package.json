@@ -1,0 +1,14 @@
+{
+  "name": "formycareer-playwright-translate",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sidecar for FormMyCareer: LibreTranslate via Playwright (API or DOM)",
+  "type": "module",
+  "scripts": {
+    "install-browsers": "playwright install chromium"
+  },
+  "dependencies": {
+    "chromium": "^3.0.3",
+    "playwright": "^1.49.0"
+  }
+}

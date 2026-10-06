@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>FormyCareer Blog</title>
+    <link>https://formycareer.vercel.app/blog.html</link>
+    <description>Career and learning articles by FormyCareer.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 May 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Inside FormyCareer: Capture, Review, and Retain Vocabulary</title>
+      <link>https://formycareer.vercel.app/formycareer-app-guide.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>A full walkthrough of the app workflow with capture, SRS review, and vocabulary management screens.</description>
+    </item>
+    <item>
+      <title>90-Day Roadmap to Transition Your Career</title>
+      <link>https://formycareer.vercel.app/roadmap-90-ngay.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>A step-by-step framework to define goals, focus on core skills, and build weekly momentum.</description>
+    </item>
+    <item>
+      <title>How to Build a CV That Gets Interview Calls</title>
+      <link>https://formycareer.vercel.app/xay-dung-cv-thuyet-phuc.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>Structure your CV, present measurable impact, and avoid mistakes that sink applications.</description>
+    </item>
+    <item>
+      <title>Effective Self-Learning for Busy Professionals</title>
+      <link>https://formycareer.vercel.app/ky-nang-tu-hoc-hieu-qua.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>Study consistently after work with focus blocks, recall practice, and small deliverables.</description>
+    </item>
+    <item>
+      <title>Interview Preparation: From CV Review to Real Answers</title>
+      <link>https://formycareer.vercel.app/chuan-bi-phong-van.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>Research the role, prepare STAR stories, and walk in with a calm checklist.</description>
+    </item>
+    <item>
+      <title>Time Management for Early-Career Professionals</title>
+      <link>https://formycareer.vercel.app/quan-ly-thoi-gian-nguoi-moi.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>Prioritize by impact, protect deep work, and review what actually moved the needle.</description>
+    </item>
+    <item>
+      <title>Vocabulary Strategy for IT Roles</title>
+      <link>https://formycareer.vercel.app/learning-vocabulary-for-it-roles.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>Collect terms by technical context and build retention for daily IT communication.</description>
+    </item>
+    <item>
+      <title>How Spaced Repetition Works for Professionals</title>
+      <link>https://formycareer.vercel.app/spaced-repetition-explained.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>A practical explanation of spaced repetition and how to apply it in a full-time schedule.</description>
+    </item>
+    <item>
+      <title>LinkedIn Profile Checklist for Better Recruiter Response</title>
+      <link>https://formycareer.vercel.app/linkedin-profile-checklist.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>A practical checklist to improve profile clarity, discoverability, and recruiter response quality.</description>
+    </item>
+    <item>
+      <title>Salary Negotiation Basics for Early-Career Professionals</title>
+      <link>https://formycareer.vercel.app/salary-negotiation-basics.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>Use a structured salary negotiation framework with evidence, boundaries, and confidence.</description>
+    </item>
+    <item>
+      <title>Portfolio Projects That Impress Hiring Managers</title>
+      <link>https://formycareer.vercel.app/portfolio-projects-that-impress.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>Build portfolio projects that show judgment, outcomes, and communication quality.</description>
+    </item>
+    <item>
+      <title>Remote Work Readiness Checklist</title>
+      <link>https://formycareer.vercel.app/remote-work-readiness.html</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>Prepare for remote roles with async communication, execution discipline, and workflow hygiene.</description>
+    </item>
+    <item>
+      <title>Technical Writing Habits That Speed Up Engineering Teams</title>
+      <link>https://formycareer.vercel.app/technical-writing-for-engineers.html</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <description>Structure specs, RFCs, and incident notes so readers ship faster with fewer loops.</description>
+    </item>
+    <item>
+      <title>Useful English Phrases for Remote Meetings</title>
+      <link>https://formycareer.vercel.app/meeting-english-remote-teams.html</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <description>Polished phrases for agendas, clarifying scope, summarizing decisions, and follow-ups.</description>
+    </item>
+    <item>
+      <title>Managing Cognitive Load While You Upskill</title>
+      <link>https://formycareer.vercel.app/cognitive-load-and-upskilling.html</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <description>Design study blocks, reduce context switching, and keep notes that survive busy weeks.</description>
+    </item>
+    <item>
+      <title>Your First 90 Days in a New Role: A Practical Guide</title>
+      <link>https://formycareer.vercel.app/first-90-days-new-job.html</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <description>Align expectations early, map stakeholders, deliver small wins, and capture vocabulary.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4338ca" />
+    <link rel="icon" href="/app-logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/app-logo.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Release Notes - FormyCareer</title>
+    <meta name="description" content="Product and website release notes for FormyCareer." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://formycareer.vercel.app/changelog.html" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3065045655441784" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip.main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="/">
+          <img class="site-brand__icon" src="/app-logo.png" width="38" height="38" alt="" />
+          <span class="site-brand__text">FormyCareer</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/" data-i18n="nav.home">Home</a>
+          <a href="/download.html" data-i18n="nav.download">Download</a>
+          <a href="/blog.html" data-i18n="nav.blog">Blog</a>
+          <a href="/about.html" data-i18n="nav.about">About</a>
+          <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a>
+          <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+          <div class="site-header__lang-wrap">
+            <label class="visually-hidden" for="site-lang" data-i18n="lang.label">Language</label>
+            <select id="site-lang" class="site-header__lang" data-i18n-aria="lang.label">
+              <option value="en">English</option>
+              <option value="vi">Tiếng Việt</option>
+              <option value="zh">中文</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="site-main">
+      <article class="card prose">
+        <h1>Release Notes</h1>
+        <p class="muted">Updated May 2, 2026</p>
+        <h2>v1.0.0</h2>
+        <ul>
+          <li>Published official product website with policy pages and download hub.</li>
+          <li>Added blog search, tag filters, RSS feed, and expanded article library.</li>
+          <li>Added cookie consent flow and AdSense/Search Console preparation placeholders.</li>
+          <li>
+            Documented FormyCareer Pro on the site and in-app About: desktop banner removal, mixed review mode,
+            unlimited SRS grades per day, and unlimited desktop capture vocabulary saves and capture-popup translation
+            requests per day (Free tier uses configurable daily caps; cached translations do not count toward the
+            translation cap).
+          </li>
+        </ul>
+        <p><a class="btn btn--ghost" href="/download.html">Go to download page</a></p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>&copy; 2026 FormyCareer</span>
+        <div class="site-footer__links">
+          <a href="/about.html" data-i18n="footer.about">About</a>
+          <a href="/download.html" data-i18n="footer.download">Download</a>
+          <a href="/terms.html" data-i18n="footer.terms">Terms</a>
+          <a href="/cookies.html" data-i18n="footer.cookies">Cookies</a>
+          <a href="/disclaimer.html" data-i18n="footer.disclaimer">Disclaimer</a>
+          <a href="/privacy.html" data-i18n="footer.privacy">Privacy</a>
+          <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/blog.html" data-i18n="footer.blog">Blog</a>
+        </div>
+      </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-consent" role="dialog" hidden data-i18n-aria="cookie.dialogAria">
+      <p data-i18n-html="cookie.banner">
+        We use essential cookies and, with your consent, may use cookies for ads and analytics. See our
+        <a href="/cookies.html">Cookie Policy</a> and <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+      <div class="cookie-consent__actions">
+        <button type="button" class="btn btn--primary" data-consent-accept data-i18n="cookie.accept">Accept</button>
+        <button type="button" class="btn btn--ghost" data-consent-decline data-i18n="cookie.decline">Decline non-essential</button>
+      </div>
+    </div>
+    <script src="/i18n.js" defer></script>
+    <script src="/consent.js" defer></script>
+  </body>
+</html>

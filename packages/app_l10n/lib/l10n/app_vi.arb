@@ -1,0 +1,784 @@
+{
+  "@@locale": "vi",
+  "appTitle": "FormyCareer",
+  "navDesktop": "Máy tính",
+  "navDashboard": "Tổng quan",
+  "navCapture": "Thu thập",
+  "navReview": "Ôn tập",
+  "navVocabulary": "Từ vựng",
+  "navGuides": "Hướng dẫn",
+  "navSettings": "Cài đặt",
+  "navAbout": "Giới thiệu",
+  "navWords": "Từ vựng",
+  "settingsTitle": "Cài đặt",
+  "settingsSubtitle": "Ngôn ngữ và tùy chọn cục bộ",
+  "uiLanguageSectionTitle": "Ngôn ngữ giao diện",
+  "uiLanguageLabel": "Ngôn ngữ ứng dụng",
+  "uiLanguageDescription": "Điều khiển menu và chữ trong phần cài đặt. Giải thích khi dịch vẫn theo “Ngôn ngữ mẹ đẻ” bên dưới.",
+  "uiLocaleSystem": "Theo hệ thống",
+  "uiLocaleEnglish": "English",
+  "uiLocaleVietnamese": "Tiếng Việt",
+  "uiLocaleJapanese": "日本語",
+  "uiLocaleChinese": "中文（简体）",
+  "uiLocaleKorean": "한국어",
+  "settingsTextScaleSectionTitle": "Cỡ chữ",
+  "settingsTextScaleLabel": "Tỷ lệ chữ giao diện",
+  "settingsTextScaleDescription": "Tăng giảm chữ trong cửa sổ desktop và popup thu thập. Cộng thêm với thang phóng hiển thị của Windows.",
+  "settingsTextScalePercent": "{percent}%",
+  "@settingsTextScalePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "backupSectionTitle": "Sao lưu & khôi phục cục bộ",
+  "backupSectionIntro": "Sao lưu và khôi phục dữ liệu trên máy.",
+  "defaultBackupFolderTitle": "Thư mục sao lưu mặc định",
+  "defaultBackupFolderDescription": "Dùng cho sao lưu tự động theo lịch. Mặc định của app là một thư mục trong Documents. “Sao lưu ngay” bên dưới vẫn có thể lưu vào thư mục bạn chọn.",
+  "resolvingPath": "Đang lấy đường dẫn…",
+  "currentPathPrefix": "Hiện tại: {path}",
+  "@currentPathPrefix": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "confirmUseFolder": "Dùng thư mục này",
+  "changeDefaultFolder": "Đổi thư mục mặc định",
+  "useAppDefaultFolder": "Dùng thư mục mặc định của app",
+  "couldNotUseFolder": "Không thể dùng thư mục này: {error}",
+  "@couldNotUseFolder": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "defaultBackupFolderSet": "Thư mục sao lưu mặc định: {path}",
+  "@defaultBackupFolderSet": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "usingAppDefaultAgain": "Đã quay lại dùng thư mục mặc định của app.",
+  "automaticBackupTitle": "Sao lưu tự động",
+  "automaticBackupDescription": "Lưu bản sao thư viện theo lịch vào thư mục mặc định phía trên.",
+  "repeatEveryLabel": "Lặp lại mỗi",
+  "backupNow": "Sao lưu ngay",
+  "restoreFromFile": "Khôi phục từ tệp",
+  "saveBackupHere": "Lưu sao lưu tại đây",
+  "restoreFromThisFile": "Khôi phục từ tệp này",
+  "backupFilesFilter": "Tệp sao lưu",
+  "backupCreated": "Đã tạo sao lưu: {path}",
+  "@backupCreated": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "restoredFrom": "Đã khôi phục từ: {restored}",
+  "@restoredFrom": {
+    "placeholders": {
+      "restored": {
+        "type": "String"
+      }
+    }
+  },
+  "backupFooterNote": "“Sao lưu ngay” cho phép chọn bất kỳ thư mục nào. Sao lưu tự động luôn dùng thư mục mặc định phía trên. Để khôi phục, chọn tệp .db hoặc .json.",
+  "backupIntervalHourly": "Mỗi giờ",
+  "backupInterval6h": "Mỗi 6 giờ",
+  "backupInterval12h": "Mỗi 12 giờ",
+  "backupIntervalDaily": "Mỗi ngày",
+  "backupInterval2days": "Mỗi 2 ngày",
+  "backupIntervalWeekly": "Mỗi tuần",
+  "backupIntervalEveryHours": "Mỗi {hours} giờ",
+  "@backupIntervalEveryHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "translationSectionTitle": "Dịch",
+  "nativeLanguageLabel": "Ngôn ngữ mẹ đẻ",
+  "translationNativeHelp": "Bản dịch và giải thích trong giao diện hiển thị bằng ngôn ngữ này.",
+  "translationEngineHelp": "Engine dịch được chọn tự động để phản hồi nhanh nhất.",
+  "backupErrNoBackupFile": "Chưa có tệp sao lưu để khôi phục.",
+  "backupErrSqliteMissing": "Không tìm thấy tệp sao lưu SQLite.",
+  "backupErrFileMissing": "Không tìm thấy tệp sao lưu đã chọn.",
+  "backupErrUnsupportedFormat": "Định dạng sao lưu không hỗ trợ. Hãy chọn tệp .db hoặc .json.",
+  "backupErrInvalidCorrupt": "Tệp sao lưu không hợp lệ hoặc đã hỏng.",
+  "backupErrGeneric": "Sao lưu/Khôi phục thất bại. Chi tiết: {error}",
+  "@backupErrGeneric": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "commonCancel": "Hủy",
+  "commonClose": "Đóng",
+  "commonDelete": "Xóa",
+  "commonSave": "Lưu",
+  "commonBack": "Quay lại",
+  "commonOk": "OK",
+  "commonRefresh": "Làm mới",
+  "commonTips": "Mẹo",
+  "commonGranted": "Đã cấp",
+  "commonMissing": "Thiếu",
+  "commonChecking": "Đang kiểm tra…",
+  "commonLoading": "Đang tải…",
+  "commonStudy": "Ôn tập",
+  "commonTag": "Thẻ",
+  "commonArchive": "Lưu trữ",
+  "commonResetSrs": "Đặt lại SRS",
+  "commonActivate": "Kích hoạt",
+  "cmdCancelEsc": "Hủy (Esc)",
+  "cmdOneItemSelected": "Đã chọn 1 mục",
+  "cmdManyItemsSelected": "Đã chọn {count} mục",
+  "@cmdManyItemsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashSubtitle": "Tổng quan học tập, biểu đồ và điều hướng nhanh",
+  "dashCouldNotLoadVocab": "Không tải được từ vựng: {error}",
+  "@dashCouldNotLoadVocab": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "dashHeroTitle": "Trung tâm học tập của bạn",
+  "dashHeroStatsLine": "{dueNow} sẵn sàng ngay · {active} thẻ trong bộ đang học · {newCount} thẻ mới",
+  "@dashHeroStatsLine": {
+    "placeholders": {
+      "dueNow": {
+        "type": "int"
+      },
+      "active": {
+        "type": "int"
+      },
+      "newCount": {
+        "type": "int"
+      }
+    }
+  },
+  "dashHeroShareCaption": "Tỷ lệ bộ đang học đến hạn ôn",
+  "dashHeroPercentDue": "{percent}% thẻ đang học đến hạn",
+  "@dashHeroPercentDue": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "dashStatDueNowTitle": "Đến hạn ngay",
+  "dashStatDueNowSubtitle": "Sẵn sàng ôn SRS",
+  "dashStatActiveTitle": "Bộ đang học",
+  "dashStatActiveSubtitle": "Mục chưa lưu trữ",
+  "dashStatNewTitle": "Mới",
+  "dashStatNewSubtitle": "Chưa từng ôn",
+  "dashStatArchivedTitle": "Đã lưu trữ",
+  "dashStatArchivedSubtitle": "Tạm dừng khỏi hàng đợi",
+  "dashInsightUpcoming": "Ôn sắp tới",
+  "dashInsightDeckComposition": "Cấu trúc bộ thẻ",
+  "dashInsightByLanguage": "Theo ngôn ngữ",
+  "dashInsightPopularTags": "Thẻ phổ biến",
+  "dashEmptyLangPairs": "Chưa có cặp ngôn ngữ.",
+  "dashEmptyTags": "Chưa có thẻ — thêm khi thu thập.",
+  "dashDeckCompositionEmpty": "Thêm từ vựng để xem cấu trúc.",
+  "dashLegendNewCount": "Mới · {count}",
+  "@dashLegendNewCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashLegendLearningCount": "Đang học (1–6 lần ôn) · {count}",
+  "@dashLegendLearningCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashLegendEstablishedCount": "Ổn định (>6 lần ôn) · {count}",
+  "@dashLegendEstablishedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashDueNowRow": "Đến hạn hoặc quá hạn",
+  "dashDueWeekRow": "Đến hạn trong 7 ngày tới (sau hôm nay)",
+  "dashDueLaterRow": "Sau đó",
+  "dashQuickActions": "Thao tác nhanh",
+  "dashStartReview": "Bắt đầu ôn",
+  "dashOpenVocabulary": "Mở từ vựng",
+  "dashCapture": "Thu thập",
+  "dashNothingDueHint": "Hiện không có thẻ đến hạn. Bạn vẫn có thể ôn trước từ tab Ôn tập.",
+  "mobileDashSubtitle": "Tổng quan học tập",
+  "mobileDashLoadFailed": "Không tải được từ vựng.\\n{error}",
+  "@mobileDashLoadFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mobileStatDueSubtitle": "Hàng đợi SRS",
+  "mobileStatActiveSubtitle": "Trong bộ",
+  "mobileStatNewSubtitle": "Chưa ôn",
+  "mobileStatArchivedSubtitle": "Tạm dừng",
+  "mobileGoReview": "Đi tới Ôn tập",
+  "mobileGoWords": "Mở Từ vựng",
+  "guidesPageSubtitle": "Mẹo cho capture, ôn tập, từ vựng và dùng hằng ngày.",
+  "guidesIntroTitle": "Điều hướng",
+  "guidesIntroBody": "Sử dụng các tab bên trái: Dashboard — ảnh chụp học tập; Capture — lấy chữ từ app khác; Review — ôn SRS; Vocabulary — duyệt và gọn thẻ; Guides — trợ giúp này; Settings — ngôn ngữ, sao lưu, phím tắt; About — phiên bản, Pro và hỗ trợ.",
+  "guidesCaptureTitle": "Thu thập",
+  "guidesCaptureBody": "Phím tắt (khi đăng ký được): thường Ctrl+Shift+D cho chữ đã chọn và Ctrl+Shift+X cho OCR vùng — xem tab Capture nếu đăng ký thất bại. Bật Auto capture để theo chọn chữ app khác. Trong popup, kéo chọn trong ô nguồn để chỉ dịch một cụm; Lưu thêm thẻ vào thư viện.",
+  "guidesReviewTitle": "Ôn tập (SRS)",
+  "guidesReviewBody": "Tab Ôn tập chạy SRS. Chấm điểm trung thực để lịch ôn có ý nghĩa. Pro mở ôn mixed (xuôi, đảo nghĩa, audio trong một phiên).",
+  "guidesVocabTitle": "Từ vựng",
+  "guidesVocabBody": "Tìm kiếm, gắn thẻ, lưu trữ và chỉnh trong tab Từ vựng. Đồng bộ và xuất tùy tài khoản và Cài đặt.",
+  "guidesSettingsTitle": "Cài đặt & sao lưu",
+  "guidesSettingsBody": "Chọn ngôn ngữ gốc cho dịch, cỡ chữ, phím bật/tắt auto capture và thư mục sao lưu cục bộ. Sao lưu giúp khi cài lại hoặc đổi máy.",
+  "guidesProTitle": "Miễn phí và Pro",
+  "guidesProBody": "Free có thể giới hạn/ngày lưu capture và gọi dịch popup trên desktop (cache thường không tính). Pro gỡ banner desktop, ôn mixed, SRS không giới hạn/ngày và gỡ giới hạn capture desktop đó. Tab Giới thiệu để cập nhật, kích hoạt và mua Pro.",
+  "aboutPageSubtitle": "Thông tin ứng dụng và bản quyền",
+  "aboutTagline": "Không gian học ngôn ngữ đa nền tảng: thu thập, ôn tập và quản lý từ vựng.",
+  "aboutVersionPrefix": "Phiên bản {version}",
+  "@aboutVersionPrefix": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutUpdatesSection": "Cập nhật & Pro",
+  "aboutLatestVersionLabel": "Phiên bản mới nhất: {version}",
+  "@aboutLatestVersionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutUpdateAvailable": "Có bản cập nhật cho ứng dụng.",
+  "aboutUsingLatest": "Bạn đang dùng phiên bản mới nhất.",
+  "aboutReleaseNotesPrefix": "Ghi chú phát hành: {notes}",
+  "@aboutReleaseNotesPrefix": {
+    "placeholders": {
+      "notes": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutMinVersionWarning": "Phiên bản này thấp hơn phiên bản tối thiểu được hỗ trợ.",
+  "aboutPlanPro": "Gói hiện tại: Pro",
+  "aboutPlanFree": "Gói hiện tại: Miễn phí",
+  "aboutProKeyInstructions": "Dùng mã bản quyền Lemon Squeezy gửi sau thanh toán. Xem phần Pro bên dưới.",
+  "aboutCheckUpdates": "Kiểm tra cập nhật",
+  "aboutCheckingUpdates": "Đang kiểm tra…",
+  "aboutDownloadLatest": "Tải bản mới nhất",
+  "aboutVisitProWebsite": "Vào trang web để mua Pro",
+  "aboutActivating": "Đang kích hoạt…",
+  "aboutActivatePro": "Kích hoạt Pro",
+  "aboutActivateProTitle": "Kích hoạt Pro",
+  "aboutActivateProPlaceholder": "Dán mã bản quyền từ email Lemon Squeezy",
+  "aboutUpdateCheckDone": "Đã kiểm tra cập nhật",
+  "aboutWhatProUnlocks": "Pro mở khóa gì",
+  "aboutOneLicense": "Một license kích hoạt Pro cho desktop và mobile.",
+  "aboutProBenefit1": "Không quảng cáo banner trên desktop khi có Pro.",
+  "aboutProBenefit2": "Chế độ ôn hỗn hợp: kết hợp xuôi, đảo nghĩa và nghe trong một phiên.",
+  "aboutProBenefit3": "Không giới hạn lượt chấm điểm SRS mỗi ngày (Miễn phí: tối đa 100/ngày).",
+  "aboutProBenefit4": "Lưu từ mới không giới hạn từ capture trên desktop mỗi ngày (Free: giới hạn/ngày).",
+  "aboutProBenefit5": "Dịch không giới hạn trong popup capture trên desktop mỗi ngày; trùng cache không tính lượt (Free: giới hạn/ngày).",
+  "aboutSupportLegal": "Hỗ trợ & Pháp lý",
+  "aboutSupportEmailPrefix": "Email hỗ trợ: {email}",
+  "@aboutSupportEmailPrefix": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutCopySupportEmail": "Sao chép email hỗ trợ",
+  "aboutOpenSourceLicenses": "Giấy phép mã nguồn mở",
+  "aboutPrivacyPolicy": "Chính sách quyền riêng tư",
+  "aboutTermsOfService": "Điều khoản dịch vụ",
+  "aboutSupportEmailCopied": "Đã sao chép email hỗ trợ",
+  "capturePageSubtitle": "Tự động thu thập, phím tắt và đồng bộ",
+  "captureAutoCaptureTitle": "Tự động thu thập",
+  "captureAutoCaptureBody": "Bật: theo chọn chữ app khác qua chuột. Tắt: chỉ Ctrl+Shift+D.",
+  "captureAutoToggleShortcutLine": "Bật nhanh bằng {shortcut}.",
+  "@captureAutoToggleShortcutLine": {
+    "placeholders": {
+      "shortcut": {
+        "type": "String"
+      }
+    }
+  },
+  "captureHotkeyToggleLabel": "Phím tắt bật/tắt tự động thu thập",
+  "capturePressNewShortcut": "Nhập phím tắt mới",
+  "captureAutoStatusOn": "BẬT",
+  "captureAutoStatusOff": "TẮT",
+  "captureAutoToast": "Tự động thu thập: {status} ({hotkey})",
+  "@captureAutoToast": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      },
+      "hotkey": {
+        "type": "String"
+      }
+    }
+  },
+  "captureHotkeySetToast": "Đặt phím tự động thu thập thành Ctrl+Shift+{key}",
+  "@captureHotkeySetToast": {
+    "placeholders": {
+      "key": {
+        "type": "String"
+      }
+    }
+  },
+  "captureVisualGuidesCardTitle": "Hướng dẫn trực quan",
+  "captureVisualGuidesAutoHeading": "Luồng tự động thu thập",
+  "captureVisualGuidesOcrHeading": "OCR vùng màn hình",
+  "captureVisualGuidesPopupRefineHint": "Mẹo: Trong popup thu thập, kéo chọn một phần đoạn gốc để chỉ dịch cụm đó — có thể chọn lại nhiều lần mà không cần đóng.",
+  "captureAutoFlowSelectLabel": "Chọn",
+  "captureAutoFlowPauseLabel": "Tạm dừng",
+  "captureAutoFlowPopupLabel": "Tra cứu",
+  "captureAutoFlowCaption": "Ba bước khi bật (chỉ app khác).",
+  "captureAutoVisualGuideLink": "Hướng dẫn từng bước có minh họa…",
+  "captureDlgAutoCaptureTitle": "Cách hoạt động tự động thu thập",
+  "captureDlgAutoCaptureIntro": "Khi bật, Formycareer theo chọn chữ bằng chuột ở app khác — không áp dụng khi thao tác trong cửa sổ Formycareer.\\n\\nSơ đồ dưới đây mô tả diễn biến.",
+  "captureDlgAutoCaptureStep1Title": "1. Chọn chữ ở app khác",
+  "captureDlgAutoCaptureStep1Body": "Trình duyệt/PDF/editor: kéo bôi đen hoặc double-click một từ.",
+  "captureDlgAutoCaptureStep2Title": "2. Thả chuột, chờ nhẹ",
+  "captureDlgAutoCaptureStep2Body": "Để vùng chọn ổn định trước khi app đọc.",
+  "captureDlgAutoCaptureStep3Title": "3. Popup hiện",
+  "captureDlgAutoCaptureStep3Body": "Popup mở đoạn chữ để dịch/lưu — kéo chọn một phần trong vùng gốc để chỉ dịch cụm đó.",
+  "captureDlgAutoCaptureStep4Title": "4. Chọn từng vùng chữ trong source để dịch tiếp",
+  "captureDlgAutoCaptureStep4Body": "Trong popup, cứ kéo chọn một đoạn khác trong ô gốc là dịch đúng cụm đó; có thể làm lặp lại nhiều lần mà không cần đóng cửa sổ.",
+  "captureDlgAutoCaptureSchemeCaption": "Sơ đồ minh họa (không phải UI thật)",
+  "captureOcrFlowHotkeyLabel": "Phím tắt",
+  "captureOcrFlowRegionLabel": "Vùng chọn",
+  "captureOcrFlowResultLabel": "Chữ OCR",
+  "captureOcrFlowCaption": "Ctrl+Shift+X rồi kéo khung quanh phần chữ cần đọc.",
+  "captureOcrVisualGuideLink": "Hướng dẫn OCR có hình…",
+  "captureDlgOcrGuideTitle": "Cách OCR vùng màn hình",
+  "captureDlgOcrGuideIntro": "OCR vùng đọc chữ từ phần màn hình bạn chọn. Luôn chạy khi bạn kích hoạt — không gắn với Tự động thu thập.\\n\\nSơ đồ dưới là các bước.",
+  "captureDlgOcrStep1Title": "1. Bắt đầu OCR vùng",
+  "captureDlgOcrStep1Body": "Ctrl+Shift+X từ app khác hoặc phím tắt trong app khi cửa sổ này đang focus.",
+  "captureDlgOcrStep2Title": "2. Kéo hình chữ nhật",
+  "captureDlgOcrStep2Body": "Màn hình tối đi — kéo khung quanh đoạn chữ/ảnh cần đọc.",
+  "captureDlgOcrStep3Title": "3. Xác nhận và xem kết quả",
+  "captureDlgOcrStep3Body": "Xác nhận — chữ OCR mở trong popup để dịch hoặc lưu.",
+  "captureDlgOcrStep4Title": "4. Chọn từng vùng chữ trong source để dịch tiếp",
+  "captureDlgOcrStep4Body": "Trong popup sau OCR, cứ kéo chọn một đoạn khác trong ô gốc là dịch đúng cụm đó; có thể làm lặp lại nhiều lần mà không cần đóng cửa sổ.",
+  "captureDlgOcrSchemeCaption": "Sơ đồ minh họa (không phải UI thật)",
+  "captureActiveBehaviorNote": "Sau khi chọn trong app khác, app đọc vùng chọn sau một nhịp chờ — clipboard có thể đổi; tắt nếu cần giữ clipboard.",
+  "captureShortcutsSectionTitle": "Thu thập",
+  "captureShortcutsSectionBody": "Ctrl+Shift+D (chữ), Ctrl+Shift+X (ảnh). Chọn chế độ để xem hướng dẫn.",
+  "captureTextFromSelection": "Chữ từ vùng chọn",
+  "captureImageRegionOcr": "Ảnh / OCR vùng",
+  "capturePermissionsTitle": "Quyền truy cập",
+  "captureAccessibilityGrantedLine": "Trợ năng: {state}",
+  "@captureAccessibilityGrantedLine": {
+    "placeholders": {
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "captureScreenRecordingGrantedLine": "Ghi màn hình: {state}",
+  "@captureScreenRecordingGrantedLine": {
+    "placeholders": {
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "capturePermRefresh": "Làm mới",
+  "capturePermRequest": "Yêu cầu quyền còn thiếu",
+  "capturePermChecking": "Đang kiểm tra…",
+  "capturePermAllGranted": "Đã có đủ quyền thu thập.",
+  "capturePermSomeMissing": "Vẫn thiếu quyền. Bật trong Cài đặt > Quyền riêng tư.",
+  "captureHotkeyUnavailable": "Phím nóng toàn cục không khả dụng. Dùng Ctrl+Shift+D / Ctrl+Shift+X trong app.",
+  "captureDlgTextCaptureTitle": "Thu thập chữ",
+  "captureDlgTextCaptureBody": "Thủ công:\\n• Ctrl+Shift+D từ app khác.\\n\\nTự động:\\n• Theo drag-select và double-click để đọc chữ đã bôi.\\n• Không dùng UIA hay nghe clipboard.\\n\\nTắt nếu chỉ muốn hotkey.",
+  "captureDlgImageCaptureTitle": "Ảnh / OCR vùng",
+  "captureDlgImageCaptureBody": "Ctrl+Shift+X hoặc phím trong app.\\n• Chọn khung để OCR.\\nLuôn thủ công.",
+  "captureDlgTipsTitle": "Mẹo thu thập",
+  "captureDlgTipsBody": "Tự động tiện tra cứu; tắt khi viết lâu để tránh ảnh hưởng clipboard.",
+  "captureHotkeyDlgTitle": "Nhấn phím tắt mới",
+  "captureHotkeyDlgHintInitial": "Nhấn Ctrl+Shift+<chữ hoặc số>",
+  "captureHotkeyDlgHintRetry": "Cần Ctrl+Shift + chữ/số",
+  "vocabPageSubtitle": "Tìm kiếm, lọc và quản lý bộ thẻ",
+  "vocabStudySelected": "Ôn các mục đã chọn",
+  "vocabStudyFiltered": "Ôn theo bộ lọc",
+  "vocabSelectBeforeStudy": "Chọn từ trước khi ôn.",
+  "vocabNoMatchFilters": "Không có từ khớp bộ lọc.",
+  "vocabTipsTitle": "Mẹo từ vựng",
+  "vocabTipsBody": "Lọc ngôn ngữ và nguồn trước khi thao tác hàng loạt.",
+  "vocabDeleteTitle": "Xóa từ đã lưu?",
+  "vocabDeleteBodyOne": "Sẽ xóa vĩnh viễn từ đã chọn.",
+  "vocabDeleteBodyMany": "Sẽ xóa vĩnh viễn {count} từ đã chọn.",
+  "@vocabDeleteBodyMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "vocabSearchPlaceholder": "Tìm thuật ngữ, nghĩa hoặc thẻ",
+  "vocabAllLanguages": "Tất cả ngôn ngữ",
+  "vocabAllSources": "Tất cả nguồn",
+  "vocabAllTags": "Tất cả thẻ",
+  "vocabFilterActive": "Đang học",
+  "vocabFilterArchived": "Đã lưu trữ",
+  "vocabFilterAll": "Tất cả",
+  "vocabClearFilters": "Xóa bộ lọc",
+  "vocabTtsSectionTitle": "Google Cloud — chuyển văn bản thành giọng nói",
+  "vocabTtsSectionBody": "Tổng hợp giọng đọc cho văn bản dài (tự chia nhỏ trong giới hạn Cloud TTS). Cần khóa API Text-to-Speech và bật API Cloud Text-to-Speech trên Google Cloud.",
+  "vocabTtsApiKeyPlaceholder": "Khóa API (lưu an toàn trên máy)",
+  "vocabTtsSaveApiKey": "Lưu khóa",
+  "vocabTtsApiKeySaved": "Đã lưu khóa API.",
+  "vocabTtsApiKeyFromBuild": "Đang dùng khóa API từ cấu hình build ứng dụng.",
+  "vocabTtsTextPlaceholder": "Dán hoặc nhập văn bản cần đọc (hỗ trợ đoạn dài)",
+  "vocabTtsStats": "Kích thước UTF-8: {bytes} · số đoạn gửi API: {segments}",
+  "@vocabTtsStats": {
+    "placeholders": {
+      "bytes": {"type": "int"},
+      "segments": {"type": "int"}
+    }
+  },
+  "vocabTtsVoiceLabel": "Giọng",
+  "vocabTtsVoiceCustom": "Giọng tùy chỉnh…",
+  "vocabTtsCustomVoicePlaceholder": "Tên giọng (vd. en-US-Neural2-J)",
+  "vocabTtsCustomLangPlaceholder": "languageCode (vd. en-US)",
+  "vocabTtsSpeakingRate": "Tốc độ đọc",
+  "vocabTtsGeneratePlay": "Tổng hợp & phát",
+  "vocabTtsSaveMp3": "Lưu MP3…",
+  "vocabTtsNeedApiKey": "Thêm khóa API Google Cloud Text-to-Speech trước.",
+  "vocabTtsNeedText": "Nhập nội dung cần tổng hợp giọng.",
+  "vocabTtsVoiceInvalid": "Nhập đủ tên giọng và mã ngôn ngữ.",
+  "vocabTtsError": "{message}",
+  "@vocabTtsError": {"placeholders": {"message": {"type": "String"}}},
+  "vocabTtsSavedFile": "Đã lưu âm thanh: {path}",
+  "@vocabTtsSavedFile": {"placeholders": {"path": {"type": "String"}}},
+  "vocabEmptyLibrary": "Chưa có từ vựng.",
+  "vocabColTermMeaning": "Thuật ngữ / Nghĩa",
+  "vocabColSource": "Nguồn",
+  "vocabColTags": "Thẻ",
+  "vocabColNextReview": "Ôn tiếp theo",
+  "vocabCtxMenuTag": "Thẻ",
+  "vocabCtxMenuArchive": "Lưu trữ",
+  "vocabCtxMenuResetSrs": "Đặt lại SRS",
+  "vocabCtxMenuDelete": "Xóa",
+  "bulkTagCreateTitle": "Tạo thẻ",
+  "bulkTagCreatePlaceholder": "Nhập thẻ mới",
+  "bulkTagRenameTitle": "Đổi tên thẻ",
+  "bulkTagRenamePlaceholder": "Nhập thẻ",
+  "bulkTagDeleteTitle": "Xóa thẻ",
+  "bulkTagDeleteBody": "Gỡ \"{tag}\" khỏi mọi từ đã lưu?",
+  "@bulkTagDeleteBody": {
+    "placeholders": {
+      "tag": {
+        "type": "String"
+      }
+    }
+  },
+  "bulkTagFilterPlaceholder": "Lọc thẻ",
+  "bulkTagClearSelections": "Bỏ chọn thẻ",
+  "bulkTagRename": "Đổi tên",
+  "bulkTagDelete": "Xóa",
+  "bulkTagApply": "Áp dụng",
+  "bulkTagNewBadge": "Mới",
+  "bulkTagPanelTitle": "Thẻ hàng loạt",
+  "bulkTagEmptyLibrary": "Chưa có thẻ trong thư viện.",
+  "bulkTagNoMatchFilter": "Không có thẻ khớp bộ lọc.",
+  "bulkTagValidationEmpty": "Tên thẻ không được để trống.",
+  "bulkTagValidationDuplicate": "Thẻ đã tồn tại.",
+  "bulkTagManageTooltip": "Quản lý thẻ",
+  "commonCreate": "Tạo",
+  "customStudyTitle": "Ôn tùy chỉnh",
+  "customStudyEntriesCount": "Số mục khớp lựa chọn: {count}",
+  "@customStudyEntriesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "customStudyMaxLabel": "Tối đa thẻ (để trống = tất cả)",
+  "customStudyMaxPlaceholder": "vd: 50",
+  "customStudyRandomOrder": "Ngẫu nhiên",
+  "customStudyCram": "Cram (không lưu lịch)",
+  "customStudyStart": "Bắt đầu",
+  "reviewSrsTitle": "Ôn SRS",
+  "reviewCramBadge": "Cram",
+  "reviewQueueCounts": "Mới {newCount} · Đang học {learningCount} · Ôn {reviewCount}",
+  "@reviewQueueCounts": {
+    "placeholders": {
+      "newCount": {
+        "type": "int"
+      },
+      "learningCount": {
+        "type": "int"
+      },
+      "reviewCount": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewAutoAudio": "Tự động phát âm thanh",
+  "reviewAllLanguages": "Tất cả ngôn ngữ",
+  "reviewLanguageFilterTooltip": "Lọc ngôn ngữ",
+  "reviewMixedProOnly": "Chế độ mixed là tính năng Pro. Kích hoạt trong Giới thiệu.",
+  "reviewMixedEnable": "Bật mixed",
+  "reviewMixedLocked": "Mixed (Pro)",
+  "reviewBasicMode": "Chế độ cơ bản",
+  "reviewExitStudy": "Thoát phiên ôn",
+  "reviewNoCardsDue": "Không có thẻ đến hạn.",
+  "reviewFinishing": "Đang kết thúc phiên…",
+  "reviewCompleted": "Đã hoàn thành ôn.",
+  "reviewReviewsToday": "Ôn hôm nay: {used}/{limit}",
+  "@reviewReviewsToday": {
+    "placeholders": {
+      "used": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewTipsTitle": "Mẹo ôn tập",
+  "reviewTipsBody": "Enter để lật/kiểm tra, 1–4 để chấm, Ctrl+Enter phát âm thanh, R phát lại.",
+  "reviewGradeHintForward": "Enter: Lật · 1–4: Điểm · Ctrl+Enter: Âm thanh · R: Phát lại",
+  "reviewGradeHintReverse": "Enter: Kiểm tra · 1–4: Điểm · Ctrl+Enter: Âm thanh · R: Phát lại",
+  "reviewAudioFailed": "Không phát được âm thanh.",
+  "reviewPlayTerm": "Phát thuật ngữ",
+  "reviewPlayAudio": "Phát âm thanh",
+  "reviewMeaning": "Nghĩa",
+  "reviewListenType": "Nghe và gõ",
+  "reviewListenInstructions": "Phát âm và gõ từ gốc.",
+  "reviewTypeOriginalPlaceholder": "Nhập từ gốc",
+  "reviewCheckAnswer": "Kiểm tra (Enter)",
+  "reviewCorrect": "Đúng",
+  "reviewIncorrect": "Sai",
+  "reviewYourAnswer": "Câu trả lời của bạn:",
+  "reviewExpected": "Đúng là:",
+  "reviewAnswerEmptyMarker": "(trống)",
+  "reviewGradeAgain": "Lại (1)",
+  "reviewGradeHard": "Khó (2)",
+  "reviewGradeGood": "Tốt (3)",
+  "reviewGradeEasy": "Dễ (4)",
+  "reviewGradeNameAgain": "again",
+  "reviewGradeNameHard": "hard",
+  "reviewGradeNameGood": "good",
+  "reviewGradeNameEasy": "easy",
+  "reviewSummaryWordsTitle": "Từ vừa ôn ({count})",
+  "@reviewSummaryWordsTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewSummaryClose": "Đóng",
+  "reviewSummaryTitle": "Tổng kết phiên ôn",
+  "reviewSummaryGreatJob": "Tuyệt vời, {name}!",
+  "@reviewSummaryGreatJob": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewSummaryEncourage": "Bạn đã hoàn thành mục tiêu hôm nay.",
+  "reviewSummaryStatReviewed": "Đã ôn",
+  "reviewSummaryStatMastered": "Ghi nhớ tốt",
+  "reviewSummaryStatTime": "Thời gian",
+  "reviewSummaryBackDashboard": "Về Dashboard",
+  "reviewSummarySeeWords": "Xem danh sách từ vừa ôn",
+  "reviewSummaryCloudSyncing": "Đang đồng bộ đám mây…",
+  "reviewSummaryCloudOk": "Đồng bộ đám mây thành công",
+  "reviewSummaryCloudFail": "Không đồng bộ được đám mây",
+  "reviewSummaryYou": "Bạn",
+  "reviewDurSeconds": "{seconds}s",
+  "@reviewDurSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurMinutes": "{minutes} phút",
+  "@reviewDurMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurMinutesSeconds": "{minutes} phút {seconds} giây",
+  "@reviewDurMinutesSeconds": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurHours": "{hours} giờ",
+  "@reviewDurHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurHoursMinutes": "{hours} giờ {minutes} phút",
+  "@reviewDurHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "captureSavePhrase": "Lưu cụm từ",
+  "captureSaveLine": "Lưu dòng",
+  "captureWholeLine": "Cả dòng",
+  "captureListenSource": "Nghe nguồn",
+  "captureNoTextDetected": "Không phát hiện chữ",
+  "captureAddTagLabel": "Thêm thẻ",
+  "captureTagHint": "Nhập thẻ",
+  "captureAutoRecentTag": "Tự điền thẻ gần đây",
+  "captureNoRecentTagsYet": "Chưa có thẻ gần đây — lưu một mục có thẻ để dùng.",
+  "captureSavedToast": "Đã lưu ✓",
+  "captureDailySaveLimitReached": "Bạn đã đạt giới hạn lưu hôm nay ({limit} lượt/ngày). Nâng cấp Pro để lưu không giới hạn.",
+  "@captureDailySaveLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "captureDailyTranslateLimitReached": "Bạn đã đạt giới hạn dịch hôm nay ({limit} lượt/ngày). Nâng cấp Pro để dịch không giới hạn.",
+  "@captureDailyTranslateLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsTagManagerEmpty": "Chưa có thẻ.",
+  "meaningTranslating": "Đang dịch…",
+  "meaningNoTranslationYet": "Chưa có bản dịch.",
+  "meaningDictHeading": "Định nghĩa (tiếng Anh)",
+  "meaningFieldLabel": "Nghĩa",
+  "meaningFieldHint": "Sửa bản dịch",
+  "meaningPlayPronunciation": "Phát phiên âm",
+  "meaningPlay": "Phát",
+  "meaningPause": "Tạm dừng",
+  "meaningPhraseMarker": "(CỤM TỪ)",
+  "settingsReviewAudioSection": "Âm thanh ôn tập",
+  "settingsAutoPlayAudioTitle": "Tự động phát âm thanh khi có thẻ mới",
+  "settingsRememberTagTitle": "Ghi nhớ thẻ cuối khi thêm từ",
+  "settingsLocalBackupTitle": "Sao lưu cục bộ",
+  "settingsBackupNowJson": "Sao lưu ngay (JSON)",
+  "settingsImportBackup": "Nhập backup (.db / .json)",
+  "settingsBackupFootnote": "Dùng JSON ký từ app hoặc backup .db/.json.",
+  "settingsManageTagsTitle": "Quản lý thẻ",
+  "settingsManageTagsSubtitle": "Đổi tên/xóa thẻ trên mọi từ.",
+  "settingsReplaceVocabTitle": "Thay thế từ vựng cục bộ?",
+  "settingsReplaceVocabBody": "Mọi từ đã lưu trên thiết bị sẽ bị thay bằng backup. Không hoàn tác.",
+  "settingsChooseFile": "Chọn tệp",
+  "settingsImporting": "Đang nhập backup…",
+  "settingsImportedCount": "Đã nhập {count} mục ({kind}).",
+  "@settingsImportedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "kind": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsExportCancelled": "Đã hủy xuất",
+  "settingsSavedPath": "Đã lưu: {path}",
+  "@settingsSavedPath": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsExportFailed": "Xuất thất bại: {error}",
+  "@settingsExportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsImportFailed": "Nhập thất bại: {error}",
+  "@settingsImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLanguageLoadError": "Lỗi cài đặt ngôn ngữ: {error}",
+  "@settingsLanguageLoadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "commonErrorPrefix": "Lỗi: {error}",
+  "@commonErrorPrefix": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "dashLearnerPickerLabel": "Ai đang học?",
+  "dashLearnerPickerNewButton": "Tạo mới",
+  "localProfilesSectionTitle": "Người học trên máy",
+  "localProfilesSectionDescription": "Mỗi người có một bộ từ riêng trên thiết bị này. Đổi hồ sơ để học bộ từ khác.",
+  "localProfileDefaultName": "Mặc định",
+  "localProfileActiveBadge": "Đang dùng",
+  "localProfileUseAction": "Chọn",
+  "localProfileAddAction": "Thêm người học",
+  "localProfileRenameAction": "Đổi tên",
+  "localProfileDeleteAction": "Xóa",
+  "localProfileAddTitle": "Người học mới",
+  "localProfileRenameTitle": "Đổi tên người học",
+  "localProfileNameLabel": "Tên hiển thị",
+  "localProfileDeleteConfirmTitle": "Xóa người học?",
+  "localProfileDeleteConfirmBody": "Từ vựng của họ vẫn lưu trên máy cho đến khi bạn xóa dữ liệu app. Bạn có thể thêm lại bất cứ lúc nào."
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="FormyCareer">
+  <defs>
+    <linearGradient id="fcg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338ca"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#fcg)"/>
+  <rect x="168" y="128" width="56" height="256" rx="12" fill="#fff"/>
+  <rect x="224" y="128" width="152" height="56" rx="12" fill="#fff"/>
+  <rect x="224" y="248" width="104" height="56" rx="12" fill="#fff"/>
+</svg>

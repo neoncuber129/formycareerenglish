@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormyCareer - Vocabulary and SRS Review for Real-World Language</title>
+    <meta
+      name="description"
+      content="FormyCareer is a vocabulary-first app: build your own word library, organize with tags, and review with spaced repetition and multiple modes for durable recall."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="google-adsense-account" content="ca-pub-3065045655441784" />
+    <meta name="theme-color" content="#4338ca" />
+    <link rel="canonical" href="https://formycareer.vercel.app/" />
+    <link rel="icon" href="/app-logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/app-logo.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FormyCareer - Vocabulary that sticks" />
+    <meta
+      property="og:description"
+      content="Personal vocabulary library with spaced repetition, multiple review modes, tags, search, and archive for work and study."
+    />
+    <meta property="og:url" content="https://formycareer.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FormyCareer - Vocabulary that sticks" />
+    <meta
+      name="twitter:description"
+      content="SRS review, tags, search, archive, and focused learning content for the words you actually need."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+    />
+    <link rel="dns-prefetch" href="https://images.pexels.com" />
+    <link rel="dns-prefetch" href="https://assets.lemonsqueezy.com" />
+    <link rel="preconnect" href="https://assets.lemonsqueezy.com" crossorigin />
+    <link rel="preconnect" href="https://images.pexels.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "FormyCareer",
+        "url": "https://formycareer.vercel.app/",
+        "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "description": "FormyCareer is a vocabulary-first app: build your own word library, organize with tags, and review with spaced repetition and multiple modes.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "FormyCareer",
+          "logo": { "@type": "ImageObject", "url": "https://formycareer.vercel.app/app-logo.png" }
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "FormyCareer",
+        "url": "https://formycareer.vercel.app/",
+        "image": [
+          "https://formycareer.vercel.app/app-logo.png",
+          "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200"
+        ],
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Android, iOS",
+        "description": "Personal vocabulary library with spaced repetition review, multiple review modes, tagging, search, and archive.",
+        "featureList": [
+          "Personal vocabulary entries with source and translation",
+          "Spaced repetition (SRS) flashcard review sessions",
+          "Review modes: forward, reverse meaning, reverse audio, and mixed",
+          "Tags, search, language filters, and archive"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip.main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="/">
+          <img class="site-brand__icon" src="/app-logo.png" width="38" height="38" alt="" />
+          <span class="site-brand__text">FormyCareer</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/" class="is-active" aria-current="page" data-i18n="nav.home">Home</a>
+          <a href="/download.html" data-i18n="nav.download">Download</a>
+          <a href="/blog.html" data-i18n="nav.blog">Blog</a>
+          <a href="/about.html" data-i18n="nav.about">About</a>
+          <a href="/privacy.html" data-i18n="nav.privacy">Privacy</a>
+          <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+          <div class="site-header__lang-wrap">
+            <label class="visually-hidden" for="site-lang" data-i18n="lang.label">Language</label>
+            <select id="site-lang" class="site-header__lang" data-i18n-aria="lang.label">
+              <option value="en">English</option>
+              <option value="vi">Tiếng Việt</option>
+              <option value="zh">中文</option>
+            </select>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <div class="hero hero--split">
+        <div>
+          <span class="hero__badge" data-i18n="home.hero.badge">Vocabulary-first · SRS · Practical learning</span>
+          <h1 class="hero__title" data-i18n="home.hero.title">Words that stick for work and interviews.</h1>
+          <p class="hero__lead" data-i18n="home.hero.lead">
+            FormyCareer focuses on one outcome: long-term vocabulary retention for real situations. Instead of memorizing random lists, you build your own library from work, study, and interview contexts, then review with spaced repetition.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="/download.html" data-i18n="home.cta.download">Download app</a>
+            <a
+              class="btn btn--primary lemonsqueezy-button"
+              href="https://formycareer.lemonsqueezy.com/checkout/buy/85d0765e-7033-421e-a813-1f04fe923916?embed=1"
+              data-i18n="home.cta.buyPro"
+              >Buy FormyCareer Pro License</a
+            >
+            <a class="btn btn--primary" href="/blog.html" data-i18n="home.cta.readBlog">Read the blog</a>
+            <a class="btn btn--ghost" href="/privacy.html" data-i18n="home.cta.privacy">Privacy policy</a>
+          </div>
+          <div class="stat-strip" aria-hidden="true">
+            <span data-i18n="home.stat.srs">SRS scheduling</span>
+            <span data-i18n="home.stat.modes">4 review modes</span>
+            <span data-i18n="home.stat.tags">Tags + search</span>
+            <span data-i18n="home.stat.archive">Archive control</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="section visual-band" aria-label="Illustrative photos">
+        <div class="visual-grid">
+          <figure class="visual-card">
+            <img src="/app-shot-review.png" srcset="/app-shot-review.png 1920w" sizes="(max-width: 720px) 100vw, 33vw" alt="FormyCareer SRS review screen." width="1920" height="940" loading="eager" fetchpriority="high" decoding="async" />
+          </figure>
+          <figure class="visual-card">
+            <img src="/app-shot-capture.png" srcset="/app-shot-capture.png 1920w" sizes="(max-width: 720px) 100vw, 33vw" alt="FormyCareer capture flow from selected text on a web page." width="1920" height="940" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="visual-card">
+            <img src="/app-shot-vocab.png" srcset="/app-shot-vocab.png 1920w" sizes="(max-width: 720px) 100vw, 33vw" alt="FormyCareer vocabulary management screen with search and filters." width="1920" height="940" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section card">
+        <h2 data-i18n="home.sec.what.title">What FormyCareer does</h2>
+        <div class="media-split">
+          <figure class="media-split__fig">
+            <img src="/app-shot-vocab.png" alt="Detailed view of FormyCareer vocabulary table and workflow." width="1920" height="940" loading="lazy" decoding="async" />
+          </figure>
+          <div class="media-split__body">
+            <p data-i18n="home.sec.what.p1">
+              FormyCareer is a vocabulary-first learning app. You collect words and phrases that matter to your real life - technical terms, workplace English, interview language, or any pair you study - and the app helps you retain them with spaced repetition.
+            </p>
+            <p data-i18n="home.sec.what.p2">
+              The product is built around retrieval practice: you are prompted to recall meaning on a schedule that strengthens memory over time.
+            </p>
+            <ul>
+              <li data-i18n="home.sec.what.li1">Create and manage personal vocabulary with source text and translation.</li>
+              <li data-i18n="home.sec.what.li2">Organize entries with tags, filters, search, and archive.</li>
+              <li data-i18n="home.sec.what.li3">Run SRS-based review sessions with multiple prompt modes.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section card">
+        <h2 data-i18n="home.sec.status.title">Current feature status</h2>
+        <p class="muted" data-i18n="home.sec.status.note">To keep this page accurate and AdSense-safe, this list reflects features that are currently available in the app.</p>
+        <div class="feature-grid feature-grid--6">
+          <div class="feature-tile"><span class="feature-tile__tag" data-i18n="home.feat.library.tag">Available</span><h3 data-i18n="home.feat.library.title">Vocabulary library</h3><p data-i18n="home.feat.library.desc">Add, edit, and manage vocabulary entries with translation pairs.</p></div>
+          <div class="feature-tile"><span class="feature-tile__tag" data-i18n="home.feat.srs.tag">Available</span><h3 data-i18n="home.feat.srs.title">SRS review</h3><p data-i18n="home.feat.srs.desc">Review cards using spaced repetition style scheduling.</p></div>
+          <div class="feature-tile"><span class="feature-tile__tag" data-i18n="home.feat.modes.tag">Available</span><h3 data-i18n="home.feat.modes.title">Review modes</h3><p data-i18n="home.feat.modes.desc">Forward, reverse meaning, reverse audio, and mixed prompts.</p></div>
+          <div class="feature-tile"><span class="feature-tile__tag" data-i18n="home.feat.tags.tag">Available</span><h3 data-i18n="home.feat.tags.title">Tags and filters</h3><p data-i18n="home.feat.tags.desc">Tag words, filter lists, search quickly, and archive old entries.</p></div>
+          <div class="feature-tile"><span class="feature-tile__tag" data-i18n="home.feat.settings.tag">Available</span><h3 data-i18n="home.feat.settings.title">Settings and diagnostics</h3><p data-i18n="home.feat.settings.desc">Manage tags and export logs for troubleshooting.</p></div>
+          <div class="feature-tile"><span class="feature-tile__tag" data-i18n="home.feat.blog.tag">Content</span><h3 data-i18n="home.feat.blog.title">Career learning blog</h3><p data-i18n="home.feat.blog.desc">Articles on CV writing, interview prep, and study systems.</p></div>
+        </div>
+      </section>
+
+      <section class="section card">
+        <h2 data-i18n="home.sec.use.title">How people use it</h2>
+        <ul>
+          <li data-i18n="home.sec.use.li1">Early-career professionals building workplace vocabulary.</li>
+          <li data-i18n="home.sec.use.li2">Job seekers preparing precise interview language.</li>
+          <li data-i18n="home.sec.use.li3">Students and self-learners turning reading inputs into long-term memory.</li>
+        </ul>
+      </section>
+
+      <section class="section card">
+        <h2 data-i18n="home.sec.ads.title">Editorial and ads transparency</h2>
+        <p data-i18n="home.sec.ads.p">
+          This website is the official information and content hub for FormyCareer. We publish educational articles for users and may display ads in eligible placements.
+        </p>
+        <ul>
+          <li data-i18n="home.sec.ads.li1">Content is written for learning value, not clickbait.</li>
+          <li data-i18n="home.sec.ads.li2">Policy pages are publicly accessible and maintained.</li>
+          <li>Support contact is active at <a href="mailto:formycareersupport@gmail.com">formycareersupport@gmail.com</a>.</li>
+        </ul>
+      </section>
+
+      <section class="section card">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary data-i18n="home.faq.q1">Is FormyCareer a full language course?</summary>
+            <p data-i18n="home.faq.a1">No. It is a vocabulary and retention system focused on practical words and phrases.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq.q2">What are the core implemented features today?</summary>
+            <p data-i18n="home.faq.a2">Vocabulary management, tag/search/archive organization, SRS review, and multiple review modes.</p>
+          </details>
+          <details>
+            <summary data-i18n="home.faq.q3">How can I contact support?</summary>
+            <p>Use <a href="mailto:formycareersupport@gmail.com">formycareersupport@gmail.com</a> and we respond within 2-5 business days.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section card" id="pro">
+        <h2 data-i18n="home.pro.title">FormyCareer Pro</h2>
+        <p data-i18n="home.pro.p">
+          One license activates Pro on desktop and mobile. Checkout opens in a secure overlay powered by Lemon Squeezy.
+          After purchase, use the license key from your email in the app under About → Activate Pro.
+        </p>
+        <h3 data-i18n="home.pro.featuresTitle">What Pro includes</h3>
+        <ul>
+          <li data-i18n="home.pro.li1">No banner ads on desktop when Pro is active.</li>
+          <li data-i18n="home.pro.li2">
+            Mixed review mode on desktop and mobile: combine forward, reverse meaning, and reverse audio prompts in one session (Free uses basic forward-only review).
+          </li>
+          <li data-i18n="home.pro.li3">
+            Unlimited SRS review grades per calendar day on your device (Free: up to 100 grades per local calendar day).
+          </li>
+          <li data-i18n="home.pro.li4">
+            Unlimited new vocabulary saves from desktop capture per calendar day (Free: daily limit).
+          </li>
+          <li data-i18n="home.pro.li5">
+            Unlimited translation requests in the desktop capture popup per calendar day; cache hits do not count (Free: daily limit).
+          </li>
+        </ul>
+        <p class="hero__cta" style="margin-top: 1rem">
+          <a
+            class="btn btn--primary lemonsqueezy-button"
+            href="https://formycareer.lemonsqueezy.com/checkout/buy/85d0765e-7033-421e-a813-1f04fe923916?embed=1"
+            data-i18n="home.cta.buyPro"
+            >Buy FormyCareer Pro License</a
+          >
+          <a
+            class="btn btn--ghost"
+            href="https://formycareer.lemonsqueezy.com/checkout/buy/85d0765e-7033-421e-a813-1f04fe923916"
+            rel="noopener noreferrer"
+            target="_blank"
+            data-i18n="dl.pro.checkoutTab"
+            >Open checkout in a new tab</a
+          >
+        </p>
+      </section>
+
+      <section class="section card">
+        <h2 data-i18n="home.download.title">Download FormyCareer</h2>
+        <p data-i18n="home.download.intro">Install the latest app build from official release links. If a platform build is not published yet, use the source code link and follow release updates.</p>
+        <div class="download-grid">
+          <div class="download-card">
+            <h3 data-i18n="home.download.win.title">Windows</h3>
+            <p class="muted" data-i18n="home.download.win.note">Installer (.exe or .msi) from official release assets.</p>
+            <p><a class="btn btn--ghost" href="#" aria-disabled="true" data-i18n="home.download.win.btn">Coming soon</a></p>
+          </div>
+          <div class="download-card">
+            <h3 data-i18n="home.download.android.title">Android</h3>
+            <p class="muted" data-i18n="home.download.android.note">APK release for testing and manual install.</p>
+            <p><a class="btn btn--ghost" href="#" aria-disabled="true" data-i18n="home.download.android.btn">Coming soon</a></p>
+          </div>
+          <div class="download-card">
+            <h3 data-i18n="home.download.src.title">Source code</h3>
+            <p class="muted" data-i18n="home.download.src.note">Track progress, release notes, and development updates on GitHub.</p>
+            <p><a class="btn btn--ghost" href="#" aria-disabled="true" data-i18n="home.download.src.btn">Add GitHub link</a></p>
+          </div>
+        </div>
+        <p class="muted" data-i18n="home.download.tip">Tip: replace the placeholder links above with your GitHub Releases URLs once your first build is published.</p>
+      </section>
+
+      <section class="section card">
+        <h2 data-i18n="home.resources.title">Career resources</h2>
+        <p data-i18n="home.resources.p">Read practical guides on career planning, interview preparation, and efficient self-learning.</p>
+        <p><a class="btn btn--ghost" href="/blog.html" data-i18n="home.resources.btn">Explore all articles</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>&copy; 2026 FormyCareer</span>
+        <div class="site-footer__links">
+          <a href="/about.html" data-i18n="footer.about">About</a>
+          <a href="/download.html" data-i18n="footer.download">Download</a>
+          <a href="/terms.html" data-i18n="footer.terms">Terms</a>
+          <a href="/cookies.html" data-i18n="footer.cookies">Cookies</a>
+          <a href="/disclaimer.html" data-i18n="footer.disclaimer">Disclaimer</a>
+          <a href="/privacy.html" data-i18n="footer.privacy">Privacy</a>
+          <a href="/contact.html" data-i18n="footer.contact">Contact</a>
+          <a href="/blog.html" data-i18n="footer.blog">Blog</a>
+        </div>
+      </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-consent" role="dialog" hidden data-i18n-aria="cookie.dialogAria">
+      <p data-i18n-html="cookie.banner">
+        We use essential cookies and, with your consent, may use cookies for ads and analytics. See our
+        <a href="/cookies.html">Cookie Policy</a> and <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+      <div class="cookie-consent__actions">
+        <button type="button" class="btn btn--primary" data-consent-accept data-i18n="cookie.accept">Accept</button>
+        <button type="button" class="btn btn--ghost" data-consent-decline data-i18n="cookie.decline">Decline non-essential</button>
+      </div>
+    </div>
+    <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+    <script src="/i18n.js" defer></script>
+    <script src="/consent.js" defer></script>
+  </body>
+</html>

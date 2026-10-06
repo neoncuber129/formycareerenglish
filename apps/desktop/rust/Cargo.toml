@@ -1,0 +1,10 @@
+[package]
+name = "formycareer_ocr"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "formycareer_ocr"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]

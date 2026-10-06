@@ -1,0 +1,784 @@
+{
+  "@@locale": "ja",
+  "appTitle": "FormyCareer",
+  "navDesktop": "デスクトップ",
+  "navDashboard": "ダッシュボード",
+  "navCapture": "取り込み",
+  "navReview": "復習",
+  "navVocabulary": "単語帳",
+  "navGuides": "ガイド",
+  "navSettings": "設定",
+  "navAbout": "情報",
+  "navWords": "単語",
+  "settingsTitle": "設定",
+  "settingsSubtitle": "言語とローカルの環境設定",
+  "uiLanguageSectionTitle": "表示言語",
+  "uiLanguageLabel": "アプリの言語",
+  "uiLanguageDescription": "メニューと設定画面の文言を切り替えます。説明文の翻訳は下の「母語」の設定に従います。",
+  "uiLocaleSystem": "システムに合わせる",
+  "uiLocaleEnglish": "English",
+  "uiLocaleVietnamese": "Tiếng Việt",
+  "uiLocaleJapanese": "日本語",
+  "uiLocaleChinese": "中文（简体）",
+  "uiLocaleKorean": "한국어",
+  "settingsTextScaleSectionTitle": "文字サイズ",
+  "settingsTextScaleLabel": "インターフェースの文字サイズ",
+  "settingsTextScaleDescription": "デスクトップとポップアップの文字サイズ。Windows の表示スケールと重ねがけされます。",
+  "settingsTextScalePercent": "{percent}%",
+  "@settingsTextScalePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "backupSectionTitle": "ローカルのバックアップと復元",
+  "backupSectionIntro": "データをこの PC 上でバックアップ・復元します。",
+  "defaultBackupFolderTitle": "既定のバックアップフォルダー",
+  "defaultBackupFolderDescription": "定期自動バックアップで使用します。既定はドキュメント配下のフォルダーです。下の「今すぐバックアップ」では別フォルダーを選べます。",
+  "resolvingPath": "パスを取得しています…",
+  "currentPathPrefix": "現在: {path}",
+  "@currentPathPrefix": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "confirmUseFolder": "このフォルダーを使う",
+  "changeDefaultFolder": "既定フォルダーを変更",
+  "useAppDefaultFolder": "アプリ既定に戻す",
+  "couldNotUseFolder": "このフォルダーを使えません: {error}",
+  "@couldNotUseFolder": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "defaultBackupFolderSet": "既定のバックアップフォルダー: {path}",
+  "@defaultBackupFolderSet": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "usingAppDefaultAgain": "アプリ既定のフォルダーに戻しました。",
+  "automaticBackupTitle": "自動バックアップ",
+  "automaticBackupDescription": "上記の既定フォルダーへスケジュールに従ってライブラリのコピーを保存します。",
+  "repeatEveryLabel": "繰り返し間隔",
+  "backupNow": "今すぐバックアップ",
+  "restoreFromFile": "ファイルから復元",
+  "saveBackupHere": "ここに保存",
+  "restoreFromThisFile": "このファイルから復元",
+  "backupFilesFilter": "バックアップファイル",
+  "backupCreated": "バックアップを作成しました: {path}",
+  "@backupCreated": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "restoredFrom": "復元元: {restored}",
+  "@restoredFrom": {
+    "placeholders": {
+      "restored": {
+        "type": "String"
+      }
+    }
+  },
+  "backupFooterNote": "「今すぐバックアップ」では任意のフォルダーを選べます。自動バックアップは常に上の既定フォルダーを使います。復元では .db または .json を選んでください。",
+  "backupIntervalHourly": "1 時間ごと",
+  "backupInterval6h": "6 時間ごと",
+  "backupInterval12h": "12 時間ごと",
+  "backupIntervalDaily": "毎日",
+  "backupInterval2days": "2 日ごと",
+  "backupIntervalWeekly": "毎週",
+  "backupIntervalEveryHours": "{hours} 時間ごと",
+  "@backupIntervalEveryHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "translationSectionTitle": "翻訳",
+  "nativeLanguageLabel": "母語",
+  "translationNativeHelp": "翻訳と説明はこの言語で表示されます。",
+  "translationEngineHelp": "応答が速いように翻訳エンジンは自動で選ばれます。",
+  "backupErrNoBackupFile": "復元できるバックアップがありません。",
+  "backupErrSqliteMissing": "SQLite のバックアップファイルが見つかりません。",
+  "backupErrFileMissing": "選択したバックアップが見つかりません。",
+  "backupErrUnsupportedFormat": "未対応の形式です。.db または .json を選んでください。",
+  "backupErrInvalidCorrupt": "バックアップが無効か破損しています。",
+  "backupErrGeneric": "バックアップまたは復元に失敗しました。詳細: {error}",
+  "@backupErrGeneric": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "commonCancel": "キャンセル",
+  "commonClose": "閉じる",
+  "commonDelete": "削除",
+  "commonSave": "保存",
+  "commonBack": "戻る",
+  "commonOk": "OK",
+  "commonRefresh": "更新",
+  "commonTips": "ヒント",
+  "commonGranted": "許可済み",
+  "commonMissing": "未許可",
+  "commonChecking": "確認中…",
+  "commonLoading": "読み込み中…",
+  "commonStudy": "学習",
+  "commonTag": "タグ",
+  "commonArchive": "アーカイブ",
+  "commonResetSrs": "SRS をリセット",
+  "commonActivate": "有効化",
+  "cmdCancelEsc": "キャンセル (Esc)",
+  "cmdOneItemSelected": "1 件選択",
+  "cmdManyItemsSelected": "{count} 件選択",
+  "@cmdManyItemsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashSubtitle": "学習スナップショットとナビ",
+  "dashCouldNotLoadVocab": "語彙を読み込めません: {error}",
+  "@dashCouldNotLoadVocab": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "dashHeroTitle": "あなたの学習ハブ",
+  "dashHeroStatsLine": "今すぐ {dueNow} · アクティブ {active} 枚 · 新規 {newCount}",
+  "@dashHeroStatsLine": {
+    "placeholders": {
+      "dueNow": {
+        "type": "int"
+      },
+      "active": {
+        "type": "int"
+      },
+      "newCount": {
+        "type": "int"
+      }
+    }
+  },
+  "dashHeroShareCaption": "アクティブデッキの復習割合",
+  "dashHeroPercentDue": "アクティブの {percent}% が期限",
+  "@dashHeroPercentDue": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "dashStatDueNowTitle": "今すぐ",
+  "dashStatDueNowSubtitle": "SRS 復習対応",
+  "dashStatActiveTitle": "アクティブデッキ",
+  "dashStatActiveSubtitle": "アーカイブ以外",
+  "dashStatNewTitle": "新規",
+  "dashStatNewSubtitle": "未復習",
+  "dashStatArchivedTitle": "アーカイブ済み",
+  "dashStatArchivedSubtitle": "キューから除外",
+  "dashInsightUpcoming": "今後の復習",
+  "dashInsightDeckComposition": "デッキ構成",
+  "dashInsightByLanguage": "言語別",
+  "dashInsightPopularTags": "人気タグ",
+  "dashEmptyLangPairs": "言語ペアがありません。",
+  "dashEmptyTags": "タグがありません — 取り込み時に追加。",
+  "dashDeckCompositionEmpty": "語彙を追加すると構成が表示されます。",
+  "dashLegendNewCount": "新規 · {count}",
+  "@dashLegendNewCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashLegendLearningCount": "学習中 (1〜6回) · {count}",
+  "@dashLegendLearningCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashLegendEstablishedCount": "定着 (>6回) · {count}",
+  "@dashLegendEstablishedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashDueNowRow": "期限切れ・今日期限",
+  "dashDueWeekRow": "今後7日以内（翌日以降）",
+  "dashDueLaterRow": "それ以降",
+  "dashQuickActions": "クイックアクション",
+  "dashStartReview": "復習開始",
+  "dashOpenVocabulary": "単語帳を開く",
+  "dashCapture": "取り込み",
+  "dashNothingDueHint": "今は期限カードがありません。復習タブで先行できます。",
+  "mobileDashSubtitle": "学習スナップショット",
+  "mobileDashLoadFailed": "語彙を読み込めません。\\n{error}",
+  "@mobileDashLoadFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mobileStatDueSubtitle": "SRS キュー",
+  "mobileStatActiveSubtitle": "デッキ内",
+  "mobileStatNewSubtitle": "未復習",
+  "mobileStatArchivedSubtitle": "一時停止",
+  "mobileGoReview": "復習へ",
+  "mobileGoWords": "単語へ",
+  "guidesPageSubtitle": "キャプチャ・復習・語彙・日常利用のヒント。",
+  "guidesIntroTitle": "基本的な見方",
+  "guidesIntroBody": "左のタブ：ダッシュボード／キャプチャ／復習／語彙／このガイド／設定／情報。",
+  "guidesCaptureTitle": "キャプチャ",
+  "guidesCaptureBody": "ショートカットはキャプチャタブ参照。自動取り込みで他アプリ選択を追跡。ポップアップでは原文をドラッグして一部だけ翻訳。",
+  "guidesReviewTitle": "復習（SRS）",
+  "guidesReviewBody": "復習タブでSRS。正直に評価。Proでミックス復習。",
+  "guidesVocabTitle": "語彙",
+  "guidesVocabBody": "語彙タブで検索・タグ・アーカイブ。同期とエクスポートは設定依存。",
+  "guidesSettingsTitle": "設定とバックアップ",
+  "guidesSettingsBody": "母語・文字サイズ・ホットキー・バックアップ先を設定。",
+  "guidesProTitle": "無料と Pro",
+  "guidesProBody": "無料はデスクトップの保存・翻訳に日次上限（キャッシュ除く）。Proは広告なし・ミックス・SRS無制限・キャプチャ無制限。情報タブで購入。",
+  "aboutPageSubtitle": "アプリ情報とライセンス",
+  "aboutTagline": "クロスプラットフォームの語学学習ワークスペース。",
+  "aboutVersionPrefix": "バージョン {version}",
+  "@aboutVersionPrefix": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutUpdatesSection": "アップデートと Pro",
+  "aboutLatestVersionLabel": "最新バージョン: {version}",
+  "@aboutLatestVersionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutUpdateAvailable": "このアプリに更新があります。",
+  "aboutUsingLatest": "最新バージョンを使用中です。",
+  "aboutReleaseNotesPrefix": "リリースノート: {notes}",
+  "@aboutReleaseNotesPrefix": {
+    "placeholders": {
+      "notes": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutMinVersionWarning": "サポートされる最小バージョンを下回っています。",
+  "aboutPlanPro": "現在のプラン: Pro",
+  "aboutPlanFree": "現在のプラン: Free",
+  "aboutProKeyInstructions": "お支払い後に届く Lemon Squeezy のライセンスキーを入力。",
+  "aboutCheckUpdates": "更新を確認",
+  "aboutCheckingUpdates": "確認中…",
+  "aboutDownloadLatest": "最新をダウンロード",
+  "aboutVisitProWebsite": "サイトで Pro を購入",
+  "aboutActivating": "有効化中…",
+  "aboutActivatePro": "Pro を有効化",
+  "aboutActivateProTitle": "Pro を有効化",
+  "aboutActivateProPlaceholder": "メールのライセンスキーを貼り付け",
+  "aboutUpdateCheckDone": "更新チェック完了",
+  "aboutWhatProUnlocks": "Pro の内容",
+  "aboutOneLicense": "1つのライセンスでデスクトップとモバイルの Pro が有効。",
+  "aboutProBenefit1": "Pro 時デスクトップにバナー広告なし。",
+  "aboutProBenefit2": "ミックス復習モード。",
+  "aboutProBenefit3": "SRS の日次採点が無制限（無料は100回/日）。",
+  "aboutProBenefit4": "デスクトップのキャプチャからの語彙保存が1日あたり無制限（無料は日次上限）。",
+  "aboutProBenefit5": "デスクトップのキャプチャポップアップでの翻訳が1日無制限。キャッシュはカウントされません（無料は日次上限）。",
+  "aboutSupportLegal": "サポートと法的情報",
+  "aboutSupportEmailPrefix": "サポート: {email}",
+  "@aboutSupportEmailPrefix": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutCopySupportEmail": "サポートメールをコピー",
+  "aboutOpenSourceLicenses": "オープンソースライセンス",
+  "aboutPrivacyPolicy": "プライバシーポリシー",
+  "aboutTermsOfService": "利用規約",
+  "aboutSupportEmailCopied": "コピーしました",
+  "capturePageSubtitle": "自動取り込み・ショートカット・同期",
+  "captureAutoCaptureTitle": "自動取り込み",
+  "captureAutoCaptureBody": "オンで他アプリの選択を追跡。オフなら Ctrl+Shift+D のみ。",
+  "captureAutoToggleShortcutLine": "{shortcut} で切り替え。",
+  "@captureAutoToggleShortcutLine": {
+    "placeholders": {
+      "shortcut": {
+        "type": "String"
+      }
+    }
+  },
+  "captureHotkeyToggleLabel": "自動取り込み切替ホットキー",
+  "capturePressNewShortcut": "新しいショートカットを押す",
+  "captureAutoStatusOn": "ON",
+  "captureAutoStatusOff": "OFF",
+  "captureAutoToast": "自動取り込み: {status} ({hotkey})",
+  "@captureAutoToast": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      },
+      "hotkey": {
+        "type": "String"
+      }
+    }
+  },
+  "captureHotkeySetToast": "自動取り込みホットキーを Ctrl+Shift+{key}",
+  "@captureHotkeySetToast": {
+    "placeholders": {
+      "key": {
+        "type": "String"
+      }
+    }
+  },
+  "captureVisualGuidesCardTitle": "ビジュアルガイド",
+  "captureVisualGuidesAutoHeading": "自動取り込みの流れ",
+  "captureVisualGuidesOcrHeading": "画面領域 OCR",
+  "captureVisualGuidesPopupRefineHint": "ヒント: ポップアップの原文をドラッグ選択すると、その部分だけを翻訳できます（閉じずに何度でも変えられます）。",
+  "captureAutoFlowSelectLabel": "選択",
+  "captureAutoFlowPauseLabel": "一時停止",
+  "captureAutoFlowPopupLabel": "調べる",
+  "captureAutoFlowCaption": "オン時は3ステップ（他アプリ）。",
+  "captureAutoVisualGuideLink": "ステップごとのガイド…",
+  "captureDlgAutoCaptureTitle": "自動取り込みの仕組み",
+  "captureDlgAutoCaptureIntro": "オン時は Formycareer が他アプリのマウス選択を監視します（このアプリ内は対象外）。\\n\\n下図は流れのイメージです。",
+  "captureDlgAutoCaptureStep1Title": "1. 他アプリで選択",
+  "captureDlgAutoCaptureStep1Body": "ブラウザや PDF でドラッグ、または単語をダブルクリック。",
+  "captureDlgAutoCaptureStep2Title": "2. マウスを離して少し待つ",
+  "captureDlgAutoCaptureStep2Body": "ハイライトが安定してから読み取ります。",
+  "captureDlgAutoCaptureStep3Title": "3. ポップアップ表示",
+  "captureDlgAutoCaptureStep3Body": "ポップアップで全文が開きます。原文エリアでドラッグ選択すると、その語句だけ翻訳できます。",
+  "captureDlgAutoCaptureStep4Title": "4. 原文で別の範囲を選び続ける",
+  "captureDlgAutoCaptureStep4Body": "ポップアップの原文エリアで、必要なたびに別の語句をドラッグ選択できます。選択するたびにその部分だけが翻訳され、ウィンドウを閉じずに何度でも繰り返せます。",
+  "captureDlgAutoCaptureSchemeCaption": "模式図（実際の UI ではありません）",
+  "captureOcrFlowHotkeyLabel": "ショートカット",
+  "captureOcrFlowRegionLabel": "範囲指定",
+  "captureOcrFlowResultLabel": "OCR テキスト",
+  "captureOcrFlowCaption": "Ctrl+Shift+X で範囲をドラッグ。",
+  "captureOcrVisualGuideLink": "OCR のステップガイド…",
+  "captureDlgOcrGuideTitle": "領域 OCR の流れ",
+  "captureDlgOcrGuideIntro": "領域 OCR は選択した画面領域から文字を読み取ります。自動取り込みとは無関係です。\\n\\n下図は流れです。",
+  "captureDlgOcrStep1Title": "1. 領域キャプチャ開始",
+  "captureDlgOcrStep1Body": "Ctrl+Shift+X（グローバル）またはフォーカス時のアプリ内ショートカット。",
+  "captureDlgOcrStep2Title": "2. 矩形をドラッグ",
+  "captureDlgOcrStep2Body": "画面が暗くなります。読み取りたい範囲をドラッグ。",
+  "captureDlgOcrStep3Title": "3. 確定して確認",
+  "captureDlgOcrStep3Body": "確定後、OCR で読み取ったテキストがポップアップで開き、翻訳や保存ができます。",
+  "captureDlgOcrStep4Title": "4. 原文で別の範囲を選び続ける",
+  "captureDlgOcrStep4Body": "ポップアップの原文エリアで、必要なたびに別の語句をドラッグ選択できます。選択するたびにその部分だけが翻訳され、ウィンドウを閉じずに何度でも繰り返せます。",
+  "captureDlgOcrSchemeCaption": "模式図（実際の UI ではありません）",
+  "captureActiveBehaviorNote": "他アプリで選択後、短い待機のあと読み取り。クリップボードが変わる場合があります。",
+  "captureShortcutsSectionTitle": "取り込み",
+  "captureShortcutsSectionBody": "Ctrl+Shift+D（テキスト）、Ctrl+Shift+X（画像）。",
+  "captureTextFromSelection": "選択からテキスト",
+  "captureImageRegionOcr": "画像／領域 OCR",
+  "capturePermissionsTitle": "権限",
+  "captureAccessibilityGrantedLine": "アクセシビリティ: {state}",
+  "@captureAccessibilityGrantedLine": {
+    "placeholders": {
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "captureScreenRecordingGrantedLine": "画面収録: {state}",
+  "@captureScreenRecordingGrantedLine": {
+    "placeholders": {
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "capturePermRefresh": "更新",
+  "capturePermRequest": "不足権限をリクエスト",
+  "capturePermChecking": "確認中…",
+  "capturePermAllGranted": "すべての権限が許可されました。",
+  "capturePermSomeMissing": "権限が不足しています。システム設定で有効に。",
+  "captureHotkeyUnavailable": "グローバルホットキーは使えません。アプリ内ショートカットを。",
+  "captureDlgTextCaptureTitle": "テキスト取り込み",
+  "captureDlgTextCaptureBody": "手動:\\n• Ctrl+Shift+D。\\n\\n自動:\\n• ドラッグ選択とダブルクリックでハイライトを読み取り。\\n• UIA／クリップボード監視は未使用。",
+  "captureDlgImageCaptureTitle": "画像／領域 OCR",
+  "captureDlgImageCaptureBody": "Ctrl+Shift+X。\\n• フルスクリーンで範囲指定。",
+  "captureDlgTipsTitle": "取り込みのヒント",
+  "captureDlgTipsBody": "長時間入力時はオフを推奨。",
+  "captureHotkeyDlgTitle": "新しいホットキーを押す",
+  "captureHotkeyDlgHintInitial": "Ctrl+Shift+文字/数字 を押す",
+  "captureHotkeyDlgHintRetry": "Ctrl+Shift + 文字/数字が必要です。",
+  "vocabPageSubtitle": "検索・フィルター・管理",
+  "vocabStudySelected": "選択項目を学習",
+  "vocabStudyFiltered": "フィルター結果を学習",
+  "vocabSelectBeforeStudy": "学習前に単語を選択。",
+  "vocabNoMatchFilters": "フィルターに一致する語がありません。",
+  "vocabTipsTitle": "語彙のヒント",
+  "vocabTipsBody": "一括操作前に言語とソースで絞り込み。",
+  "vocabDeleteTitle": "保存語を削除しますか？",
+  "vocabDeleteBodyOne": "選択した語を完全削除。",
+  "vocabDeleteBodyMany": "選択した {count} 語を削除。",
+  "@vocabDeleteBodyMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "vocabSearchPlaceholder": "語・意味・タグで検索",
+  "vocabAllLanguages": "すべての言語",
+  "vocabAllSources": "すべてのソース",
+  "vocabAllTags": "すべてのタグ",
+  "vocabFilterActive": "アクティブ",
+  "vocabFilterArchived": "アーカイブ",
+  "vocabFilterAll": "すべて",
+  "vocabClearFilters": "フィルターをクリア",
+  "vocabTtsSectionTitle": "Google Cloud テキスト読み上げ",
+  "vocabTtsSectionBody": "長いテキストを音声化（Cloud TTS の上限内で自動分割）。Text-to-Speech API キーと API の有効化が必要です。",
+  "vocabTtsApiKeyPlaceholder": "API キー（端末に安全に保存）",
+  "vocabTtsSaveApiKey": "キーを保存",
+  "vocabTtsApiKeySaved": "API キーを保存しました。",
+  "vocabTtsApiKeyFromBuild": "ビルド設定の API キーを使用しています。",
+  "vocabTtsTextPlaceholder": "読み上げるテキストを入力（長文対応）",
+  "vocabTtsStats": "UTF-8 サイズ: {bytes} · リクエスト分割: {segments}",
+  "@vocabTtsStats": {
+    "placeholders": {
+      "bytes": {"type": "int"},
+      "segments": {"type": "int"}
+    }
+  },
+  "vocabTtsVoiceLabel": "音声",
+  "vocabTtsVoiceCustom": "カスタム音声…",
+  "vocabTtsCustomVoicePlaceholder": "音声名（例: en-US-Neural2-J）",
+  "vocabTtsCustomLangPlaceholder": "languageCode（例: en-US）",
+  "vocabTtsSpeakingRate": "話速",
+  "vocabTtsGeneratePlay": "合成して再生",
+  "vocabTtsSaveMp3": "MP3 を保存…",
+  "vocabTtsNeedApiKey": "先に Google Cloud Text-to-Speech の API キーを追加してください。",
+  "vocabTtsNeedText": "合成するテキストを入力してください。",
+  "vocabTtsVoiceInvalid": "音声名と languageCode の両方を入力してください。",
+  "vocabTtsError": "{message}",
+  "@vocabTtsError": {"placeholders": {"message": {"type": "String"}}},
+  "vocabTtsSavedFile": "音声を保存しました: {path}",
+  "@vocabTtsSavedFile": {"placeholders": {"path": {"type": "String"}}},
+  "vocabEmptyLibrary": "語彙がありません。",
+  "vocabColTermMeaning": "語／意味",
+  "vocabColSource": "ソース",
+  "vocabColTags": "タグ",
+  "vocabColNextReview": "次の復習",
+  "vocabCtxMenuTag": "タグ",
+  "vocabCtxMenuArchive": "アーカイブ",
+  "vocabCtxMenuResetSrs": "SRS をリセット",
+  "vocabCtxMenuDelete": "削除",
+  "bulkTagCreateTitle": "タグ作成",
+  "bulkTagCreatePlaceholder": "新しいタグ",
+  "bulkTagRenameTitle": "タグの名前変更",
+  "bulkTagRenamePlaceholder": "タグを入力",
+  "bulkTagDeleteTitle": "タグ削除",
+  "bulkTagDeleteBody": "\"{tag}\" をすべてから削除？",
+  "@bulkTagDeleteBody": {
+    "placeholders": {
+      "tag": {
+        "type": "String"
+      }
+    }
+  },
+  "bulkTagFilterPlaceholder": "タグをフィルター",
+  "bulkTagClearSelections": "選択解除",
+  "bulkTagRename": "名前変更",
+  "bulkTagDelete": "削除",
+  "bulkTagApply": "適用",
+  "bulkTagNewBadge": "新規",
+  "bulkTagPanelTitle": "一括タグ",
+  "bulkTagEmptyLibrary": "ライブラリにタグがありません。",
+  "bulkTagNoMatchFilter": "フィルターに一致するタグがありません。",
+  "bulkTagValidationEmpty": "タグ名は空にできません。",
+  "bulkTagValidationDuplicate": "タグが既にあります。",
+  "bulkTagManageTooltip": "タグを管理",
+  "commonCreate": "作成",
+  "customStudyTitle": "カスタム学習",
+  "customStudyEntriesCount": "選択に一致: {count} 件",
+  "@customStudyEntriesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "customStudyMaxLabel": "最大枚数（空欄ですべて）",
+  "customStudyMaxPlaceholder": "例: 50",
+  "customStudyRandomOrder": "ランダム順",
+  "customStudyCram": "クラム（スケジュール保存なし）",
+  "customStudyStart": "開始",
+  "reviewSrsTitle": "SRS 復習",
+  "reviewCramBadge": "クラム",
+  "reviewQueueCounts": "新規 {newCount}・学習中 {learningCount}・復習 {reviewCount}",
+  "@reviewQueueCounts": {
+    "placeholders": {
+      "newCount": {
+        "type": "int"
+      },
+      "learningCount": {
+        "type": "int"
+      },
+      "reviewCount": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewAutoAudio": "自動オーディオ",
+  "reviewAllLanguages": "すべての言語",
+  "reviewLanguageFilterTooltip": "言語フィルター",
+  "reviewMixedProOnly": "ミックスモードは Pro。",
+  "reviewMixedEnable": "ミックスを有効化",
+  "reviewMixedLocked": "Mixed (Pro)",
+  "reviewBasicMode": "ベーシック",
+  "reviewExitStudy": "学習を終了",
+  "reviewNoCardsDue": "期限カードがありません。",
+  "reviewFinishing": "セッション終了中…",
+  "reviewCompleted": "復習完了。",
+  "reviewReviewsToday": "今日の復習: {used}/{limit}",
+  "@reviewReviewsToday": {
+    "placeholders": {
+      "used": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewTipsTitle": "復習のヒント",
+  "reviewTipsBody": "Enter で反転／採点、Ctrl+Enter で音声。",
+  "reviewGradeHintForward": "Enter: 表面裏 · Ctrl+Enter: 音声",
+  "reviewGradeHintReverse": "Enter: チェック · Ctrl+Enter: 音声",
+  "reviewAudioFailed": "音声を再生できません。",
+  "reviewPlayTerm": "用語を再生",
+  "reviewPlayAudio": "音声を再生",
+  "reviewMeaning": "意味",
+  "reviewListenType": "聞いて入力",
+  "reviewListenInstructions": "音声を聞いて原文を入力。",
+  "reviewTypeOriginalPlaceholder": "原文を入力",
+  "reviewCheckAnswer": "チェック (Enter)",
+  "reviewCorrect": "正解",
+  "reviewIncorrect": "不正解",
+  "reviewYourAnswer": "あなたの解答:",
+  "reviewExpected": "正解:",
+  "reviewAnswerEmptyMarker": "(空)",
+  "reviewGradeAgain": "もう一度 (1)",
+  "reviewGradeHard": "難しい (2)",
+  "reviewGradeGood": "良い (3)",
+  "reviewGradeEasy": "簡単 (4)",
+  "reviewGradeNameAgain": "again",
+  "reviewGradeNameHard": "hard",
+  "reviewGradeNameGood": "good",
+  "reviewGradeNameEasy": "easy",
+  "reviewSummaryWordsTitle": "直近で復習した語 ({count})",
+  "@reviewSummaryWordsTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewSummaryClose": "閉じる",
+  "reviewSummaryTitle": "セッションサマリー",
+  "reviewSummaryGreatJob": "素晴らしい、{name}さん！",
+  "@reviewSummaryGreatJob": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewSummaryEncourage": "今日の目標を達成しました。",
+  "reviewSummaryStatReviewed": "復習済み",
+  "reviewSummaryStatMastered": "よく覚えた",
+  "reviewSummaryStatTime": "時間",
+  "reviewSummaryBackDashboard": "ダッシュボードへ",
+  "reviewSummarySeeWords": "復習した語を見る",
+  "reviewSummaryCloudSyncing": "クラウド同期中…",
+  "reviewSummaryCloudOk": "クラウド同期成功",
+  "reviewSummaryCloudFail": "クラウド同期失敗",
+  "reviewSummaryYou": "あなた",
+  "reviewDurSeconds": "{seconds}秒",
+  "@reviewDurSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurMinutes": "{minutes}分",
+  "@reviewDurMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurMinutesSeconds": "{minutes}分{seconds}秒",
+  "@reviewDurMinutesSeconds": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurHours": "{hours}時間",
+  "@reviewDurHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurHoursMinutes": "{hours}時間{minutes}分",
+  "@reviewDurHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "captureSavePhrase": "フレーズを保存",
+  "captureSaveLine": "行を保存",
+  "captureWholeLine": "全文行",
+  "captureListenSource": "ソースを再生",
+  "captureNoTextDetected": "テキストなし",
+  "captureAddTagLabel": "タグを追加",
+  "captureTagHint": "タグ入力",
+  "captureAutoRecentTag": "最近のタグを自動入力",
+  "captureNoRecentTagsYet": "最近タグがありません。",
+  "captureSavedToast": "保存 ✓",
+  "captureDailySaveLimitReached": "本日の保存上限（{limit} 回/日）に達しました。Pro で無制限に。",
+  "@captureDailySaveLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "captureDailyTranslateLimitReached": "本日の翻訳上限（{limit} 回/日）に達しました。Pro で無制限に。",
+  "@captureDailyTranslateLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsTagManagerEmpty": "タグがありません。",
+  "meaningTranslating": "翻訳中…",
+  "meaningNoTranslationYet": "まだ翻訳がありません。",
+  "meaningDictHeading": "英語の定義",
+  "meaningFieldLabel": "意味",
+  "meaningFieldHint": "翻訳を編集",
+  "meaningPlayPronunciation": "発音を再生",
+  "meaningPlay": "再生",
+  "meaningPause": "一時停止",
+  "meaningPhraseMarker": "(フレーズ)",
+  "settingsReviewAudioSection": "復習オーディオ",
+  "settingsAutoPlayAudioTitle": "新しいカードで自動再生",
+  "settingsRememberTagTitle": "最後のタグを記憶",
+  "settingsLocalBackupTitle": "ローカルバックアップ",
+  "settingsBackupNowJson": "JSON でバックアップ",
+  "settingsImportBackup": "バックアップをインポート",
+  "settingsBackupFootnote": "署名付き JSON または .db/.json。",
+  "settingsManageTagsTitle": "タグ管理",
+  "settingsManageTagsSubtitle": "すべての語でタグを編集。",
+  "settingsReplaceVocabTitle": "ローカル語彙を置換？",
+  "settingsReplaceVocabBody": "バックアップで置換。元に戻せません。",
+  "settingsChooseFile": "ファイルを選択",
+  "settingsImporting": "インポート中…",
+  "settingsImportedCount": "{count} 件インポート ({kind})。",
+  "@settingsImportedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "kind": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsExportCancelled": "エクスポート取消",
+  "settingsSavedPath": "保存先: {path}",
+  "@settingsSavedPath": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsExportFailed": "エクスポート失敗: {error}",
+  "@settingsExportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsImportFailed": "インポート失敗: {error}",
+  "@settingsImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLanguageLoadError": "言語設定エラー: {error}",
+  "@settingsLanguageLoadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "commonErrorPrefix": "エラー: {error}",
+  "@commonErrorPrefix": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "dashLearnerPickerLabel": "Who is learning?",
+  "dashLearnerPickerNewButton": "新規作成",
+  "localProfilesSectionTitle": "Local learners",
+  "localProfilesSectionDescription": "Each learner has a separate vocabulary library on this device. Switch profile to study a different word set.",
+  "localProfileDefaultName": "Default",
+  "localProfileActiveBadge": "Active",
+  "localProfileUseAction": "Use",
+  "localProfileAddAction": "Add learner",
+  "localProfileRenameAction": "Rename",
+  "localProfileDeleteAction": "Remove",
+  "localProfileAddTitle": "New learner",
+  "localProfileRenameTitle": "Rename learner",
+  "localProfileNameLabel": "Display name",
+  "localProfileDeleteConfirmTitle": "Remove learner?",
+  "localProfileDeleteConfirmBody": "Their vocabulary stays on this device until you clear app data. You can add this learner again anytime."
+}

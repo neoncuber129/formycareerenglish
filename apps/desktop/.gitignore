@@ -1,0 +1,58 @@
+# Local Flutter --dart-define-from-file (OAuth client id/secret, SYNC_API_BASE_URL)
+dart_defines.json
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Local Argos venv (run third_party/argos_runtime/setup_argos_runtime.ps1 or .sh)
+/third_party/argos_runtime/Scripts/
+/third_party/argos_runtime/Lib/
+/third_party/argos_runtime/Include/
+/third_party/argos_runtime/pyvenv.cfg
+/third_party/argos_runtime/share/
+/third_party/argos_runtime/bin/
+/third_party/argos_runtime/lib/
+/third_party/argos_runtime/include/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release

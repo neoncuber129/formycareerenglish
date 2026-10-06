@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://formycareer.vercel.app/sitemap.xml
+Sitemap: https://formycareer.vercel.app/rss.xml

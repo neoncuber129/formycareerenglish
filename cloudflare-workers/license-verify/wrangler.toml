@@ -1,0 +1,25 @@
+name = "formycareer-license-verify"
+main = "src/index.js"
+compatibility_date = "2026-05-01"
+
+[vars]
+# Optional fallback key list when D1 is unavailable.
+VALID_LICENSE_KEYS = "FORMYCAREER-PRO-2026"
+DEFAULT_MAX_DEVICES = "2"
+# Used by POST /lemon/verify (Lemon proxy). Leave empty to skip that check.
+LEMON_EXPECTED_STORE_ID = ""
+LEMON_EXPECTED_PRODUCT_ID = "1018783"
+LEMON_EXPECTED_VARIANT_ID = "1598490"
+# Optional: wrangler secret put LEMON_VERIFY_PROXY_TOKEN — then desktop must send
+# Authorization: Bearer <same> (see lemonLicenseProxyAuthToken in remote config).
+# Set these via dashboard/secret in production:
+# ADMIN_API_TOKEN = "replace-me"
+# GUMROAD_WEBHOOK_TOKEN = "replace-me"
+# RESEND_API_KEY = "replace-me"
+# LICENSE_EMAIL_FROM = "FormyCareer <license@mail.yourdomain.com>"
+# SUPPORT_EMAIL = "FormyCareersupport@gmail.com"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "formycareer_licenses"
+database_id = "f8655c2e-51e2-46af-af4b-df2bd3077f0c"

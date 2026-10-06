@@ -1,0 +1,784 @@
+{
+  "@@locale": "ko",
+  "appTitle": "FormyCareer",
+  "navDesktop": "데스크톱",
+  "navDashboard": "대시보드",
+  "navCapture": "수집",
+  "navReview": "복습",
+  "navVocabulary": "단어장",
+  "navGuides": "가이드",
+  "navSettings": "설정",
+  "navAbout": "정보",
+  "navWords": "단어",
+  "settingsTitle": "설정",
+  "settingsSubtitle": "언어 및 로컬 환경설정",
+  "uiLanguageSectionTitle": "인터페이스 언어",
+  "uiLanguageLabel": "앱 언어",
+  "uiLanguageDescription": "메뉴와 설정 화면의 글자를 바꿉니다. 번역 설명은 아래 ‘모국어’ 설정을 따릅니다.",
+  "uiLocaleSystem": "시스템 따라가기",
+  "uiLocaleEnglish": "English",
+  "uiLocaleVietnamese": "Tiếng Việt",
+  "uiLocaleJapanese": "日本語",
+  "uiLocaleChinese": "中文（简体）",
+  "uiLocaleKorean": "한국어",
+  "settingsTextScaleSectionTitle": "글자 크기",
+  "settingsTextScaleLabel": "인터페이스 글자 크기",
+  "settingsTextScaleDescription": "데스크톱 창과 수집 팝업 글자 크기입니다. Windows 디스플레이 배율과 함께 적용됩니다.",
+  "settingsTextScalePercent": "{percent}%",
+  "@settingsTextScalePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "backupSectionTitle": "로컬 백업 및 복원",
+  "backupSectionIntro": "데이터를 이 컴퓨터에서 백업하고 복원합니다.",
+  "defaultBackupFolderTitle": "기본 백업 폴더",
+  "defaultBackupFolderDescription": "예약 자동 백업에 사용됩니다. 기본값은 문서 폴더 아래입니다. 아래 ‘지금 백업’에서는 다른 폴더를 선택할 수 있습니다.",
+  "resolvingPath": "경로 확인 중…",
+  "currentPathPrefix": "현재: {path}",
+  "@currentPathPrefix": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "confirmUseFolder": "이 폴더 사용",
+  "changeDefaultFolder": "기본 폴더 변경",
+  "useAppDefaultFolder": "앱 기본 폴더 사용",
+  "couldNotUseFolder": "이 폴더를 사용할 수 없습니다: {error}",
+  "@couldNotUseFolder": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "defaultBackupFolderSet": "기본 백업 폴더: {path}",
+  "@defaultBackupFolderSet": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "usingAppDefaultAgain": "앱 기본 폴더를 다시 사용합니다.",
+  "automaticBackupTitle": "자동 백업",
+  "automaticBackupDescription": "위의 기본 폴더에 일정에 따라 라이브러리 사본을 저장합니다.",
+  "repeatEveryLabel": "반복 주기",
+  "backupNow": "지금 백업",
+  "restoreFromFile": "파일에서 복원",
+  "saveBackupHere": "여기에 저장",
+  "restoreFromThisFile": "이 파일에서 복원",
+  "backupFilesFilter": "백업 파일",
+  "backupCreated": "백업 생성됨: {path}",
+  "@backupCreated": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "restoredFrom": "복원 출처: {restored}",
+  "@restoredFrom": {
+    "placeholders": {
+      "restored": {
+        "type": "String"
+      }
+    }
+  },
+  "backupFooterNote": "‘지금 백업’에서는 원하는 폴더를 고를 수 있습니다. 자동 백업은 항상 위 기본 폴더를 사용합니다. 복원 시 .db 또는 .json 파일을 선택하세요.",
+  "backupIntervalHourly": "매시간",
+  "backupInterval6h": "6시간마다",
+  "backupInterval12h": "12시간마다",
+  "backupIntervalDaily": "매일",
+  "backupInterval2days": "이틀마다",
+  "backupIntervalWeekly": "매주",
+  "backupIntervalEveryHours": "{hours}시간마다",
+  "@backupIntervalEveryHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "translationSectionTitle": "번역",
+  "nativeLanguageLabel": "모국어",
+  "translationNativeHelp": "번역과 설명은 이 언어로 표시됩니다.",
+  "translationEngineHelp": "가장 빠른 응답을 위해 번역 엔진이 자동으로 선택됩니다.",
+  "backupErrNoBackupFile": "복원할 백업 파일이 없습니다.",
+  "backupErrSqliteMissing": "SQLite 백업 파일을 찾을 수 없습니다.",
+  "backupErrFileMissing": "선택한 백업 파일을 찾을 수 없습니다.",
+  "backupErrUnsupportedFormat": "지원하지 않는 형식입니다. .db 또는 .json 파일을 선택하세요.",
+  "backupErrInvalidCorrupt": "백업 파일이 잘못되었거나 손상되었습니다.",
+  "backupErrGeneric": "백업 또는 복원에 실패했습니다. 세부 정보: {error}",
+  "@backupErrGeneric": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "commonCancel": "취소",
+  "commonClose": "닫기",
+  "commonDelete": "삭제",
+  "commonSave": "저장",
+  "commonBack": "뒤로",
+  "commonOk": "확인",
+  "commonRefresh": "새로 고침",
+  "commonTips": "팁",
+  "commonGranted": "허용됨",
+  "commonMissing": "없음",
+  "commonChecking": "확인 중…",
+  "commonLoading": "로드 중…",
+  "commonStudy": "학습",
+  "commonTag": "태그",
+  "commonArchive": "보관",
+  "commonResetSrs": "SRS 초기화",
+  "commonActivate": "활성화",
+  "cmdCancelEsc": "취소 (Esc)",
+  "cmdOneItemSelected": "1개 선택됨",
+  "cmdManyItemsSelected": "{count}개 선택됨",
+  "@cmdManyItemsSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashSubtitle": "학습 요약 및 빠른 이동",
+  "dashCouldNotLoadVocab": "단어장을 불러올 수 없습니다: {error}",
+  "@dashCouldNotLoadVocab": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "dashHeroTitle": "내 학습 허브",
+  "dashHeroStatsLine": "지금 {dueNow}개 · 활성 덱 {active}장 · 새 카드 {newCount}",
+  "@dashHeroStatsLine": {
+    "placeholders": {
+      "dueNow": {
+        "type": "int"
+      },
+      "active": {
+        "type": "int"
+      },
+      "newCount": {
+        "type": "int"
+      }
+    }
+  },
+  "dashHeroShareCaption": "활성 덱 중 복습 비율",
+  "dashHeroPercentDue": "활성 카드의 {percent}% 만료",
+  "@dashHeroPercentDue": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "dashStatDueNowTitle": "지금 만료",
+  "dashStatDueNowSubtitle": "SRS 복습 가능",
+  "dashStatActiveTitle": "활성 덱",
+  "dashStatActiveSubtitle": "보관 안 함",
+  "dashStatNewTitle": "신규",
+  "dashStatNewSubtitle": "복습 안 함",
+  "dashStatArchivedTitle": "보관됨",
+  "dashStatArchivedSubtitle": "대기열 제외",
+  "dashInsightUpcoming": "예정 복습",
+  "dashInsightDeckComposition": "덱 구성",
+  "dashInsightByLanguage": "언어별",
+  "dashInsightPopularTags": "인기 태그",
+  "dashEmptyLangPairs": "언어 쌍이 없습니다.",
+  "dashEmptyTags": "태그 없음 — 수집 시 추가하세요.",
+  "dashDeckCompositionEmpty": "단어를 추가하면 구성이 표시됩니다.",
+  "dashLegendNewCount": "신규 · {count}",
+  "@dashLegendNewCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashLegendLearningCount": "학습 중(1–6회) · {count}",
+  "@dashLegendLearningCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashLegendEstablishedCount": "안정(>6회) · {count}",
+  "@dashLegendEstablishedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "dashDueNowRow": "만료 또는 지각",
+  "dashDueWeekRow": "향후 7일 이내(오늘 제외)",
+  "dashDueLaterRow": "그 이후",
+  "dashQuickActions": "빠른 작업",
+  "dashStartReview": "복습 시작",
+  "dashOpenVocabulary": "단어장 열기",
+  "dashCapture": "수집",
+  "dashNothingDueHint": "만료 카드 없음. 복습 탭에서 미리 할 수 있습니다.",
+  "mobileDashSubtitle": "학습 스냅샷",
+  "mobileDashLoadFailed": "단어장을 불러올 수 없습니다.\\n{error}",
+  "@mobileDashLoadFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mobileStatDueSubtitle": "SRS 대기열",
+  "mobileStatActiveSubtitle": "덱 안",
+  "mobileStatNewSubtitle": "미복습",
+  "mobileStatArchivedSubtitle": "일시중지",
+  "mobileGoReview": "복습으로",
+  "mobileGoWords": "단어로",
+  "guidesPageSubtitle": "캡처·복습·단어·일상 사용 팁.",
+  "guidesIntroTitle": "탭 안내",
+  "guidesIntroBody": "왼쪽 탭: 대시보드·수집·복습·단어·이 안내·설정·정보.",
+  "guidesCaptureTitle": "수집",
+  "guidesCaptureBody": "단축키는 캡처 탭 참고. 자동 수집으로 다른 앱 선택 추적. 팝업에서 원문 일부 드래그해 번역.",
+  "guidesReviewTitle": "복습(SRS)",
+  "guidesReviewBody": "복습 탭에서 SRS. Pro는 혼합 복습.",
+  "guidesVocabTitle": "단어장",
+  "guidesVocabBody": "단어 탭에서 검색·태그·보관. 동기화는 설정 따름.",
+  "guidesSettingsTitle": "설정 및 백업",
+  "guidesSettingsBody": "모국어·글자 크기·단축키·백업 폴더 설정.",
+  "guidesProTitle": "무료 및 Pro",
+  "guidesProBody": "무료는 일일 한도 있을 수 있음. Pro는 배너 제거·혼합 복습·무제한 등. 정보 탭에서 구매.",
+  "aboutPageSubtitle": "앱 정보 및 라이선스",
+  "aboutTagline": "캡처·복습·단어 관리를 위한 학습 공간입니다.",
+  "aboutVersionPrefix": "버전 {version}",
+  "@aboutVersionPrefix": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutUpdatesSection": "업데이트 및 Pro",
+  "aboutLatestVersionLabel": "최신 버전: {version}",
+  "@aboutLatestVersionLabel": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutUpdateAvailable": "업데이트가 있습니다.",
+  "aboutUsingLatest": "최신 버전을 사용 중입니다.",
+  "aboutReleaseNotesPrefix": "릴리스 노트: {notes}",
+  "@aboutReleaseNotesPrefix": {
+    "placeholders": {
+      "notes": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutMinVersionWarning": "지원 최소 버전 미만입니다.",
+  "aboutPlanPro": "현재 플랜: Pro",
+  "aboutPlanFree": "현재 플랜: 무료",
+  "aboutProKeyInstructions": "Lemon Squeezy 라이선스 키를 입력하세요.",
+  "aboutCheckUpdates": "업데이트 확인",
+  "aboutCheckingUpdates": "확인 중…",
+  "aboutDownloadLatest": "최신 다운로드",
+  "aboutVisitProWebsite": "웹사이트에서 Pro 구매",
+  "aboutActivating": "활성화 중…",
+  "aboutActivatePro": "Pro 활성화",
+  "aboutActivateProTitle": "Pro 활성화",
+  "aboutActivateProPlaceholder": "이메일의 라이선스 키 붙여넣기",
+  "aboutUpdateCheckDone": "업데이트 확인 완료",
+  "aboutWhatProUnlocks": "Pro 혜택",
+  "aboutOneLicense": "라이선스 하나로 데스크톱·모바일 Pro.",
+  "aboutProBenefit1": "Pro 시 데스크톱 배너 광고 없음.",
+  "aboutProBenefit2": "혼합 복습 모드.",
+  "aboutProBenefit3": "SRS 일일 채점 무제한(무료 100회).",
+  "aboutProBenefit4": "데스크톱 캡처에서 저장하는 새 단어가 일일 무제한(무료는 일일 한도).",
+  "aboutProBenefit5": "데스크톱 캡처 팝업 번역 요청 일일 무제한. 캐시 적중은 한도에 포함 안 됨(무료는 일일 한도).",
+  "aboutSupportLegal": "지원 및 법적 정보",
+  "aboutSupportEmailPrefix": "지원 이메일: {email}",
+  "@aboutSupportEmailPrefix": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutCopySupportEmail": "지원 메일 복사",
+  "aboutOpenSourceLicenses": "오픈소스 라이선스",
+  "aboutPrivacyPolicy": "개인정보 처리방침",
+  "aboutTermsOfService": "서비스 약관",
+  "aboutSupportEmailCopied": "복사함",
+  "capturePageSubtitle": "자동 수집·단축키·동기화",
+  "captureAutoCaptureTitle": "자동 수집",
+  "captureAutoCaptureBody": "켜면 다른 앱 선택 추적. 끄면 Ctrl+Shift+D만.",
+  "captureAutoToggleShortcutLine": "{shortcut}(으)로 전환.",
+  "@captureAutoToggleShortcutLine": {
+    "placeholders": {
+      "shortcut": {
+        "type": "String"
+      }
+    }
+  },
+  "captureHotkeyToggleLabel": "자동 수집 전환 단축키",
+  "capturePressNewShortcut": "새 단축키 입력",
+  "captureAutoStatusOn": "켜짐",
+  "captureAutoStatusOff": "꺼짐",
+  "captureAutoToast": "자동 수집: {status} ({hotkey})",
+  "@captureAutoToast": {
+    "placeholders": {
+      "status": {
+        "type": "String"
+      },
+      "hotkey": {
+        "type": "String"
+      }
+    }
+  },
+  "captureHotkeySetToast": "자동 수집 단축키 Ctrl+Shift+{key}",
+  "@captureHotkeySetToast": {
+    "placeholders": {
+      "key": {
+        "type": "String"
+      }
+    }
+  },
+  "captureVisualGuidesCardTitle": "시각 안내",
+  "captureVisualGuidesAutoHeading": "자동 수집 흐름",
+  "captureVisualGuidesOcrHeading": "화면 영역 OCR",
+  "captureVisualGuidesPopupRefineHint": "팁: 수집 팝업에서 원문 일부를 드래그하면 그 구만 번역합니다. 닫지 않고 여러 번 바꿀 수 있습니다.",
+  "captureAutoFlowSelectLabel": "선택",
+  "captureAutoFlowPauseLabel": "대기",
+  "captureAutoFlowPopupLabel": "조회",
+  "captureAutoFlowCaption": "켜짐 시 3단계(다른 앱).",
+  "captureAutoVisualGuideLink": "단계별 안내…",
+  "captureDlgAutoCaptureTitle": "자동 수집 작동 방식",
+  "captureDlgAutoCaptureIntro": "켜면 Formycareer가 다른 앱의 마우스 선택을 감지합니다(Formycareer 창 안은 제외).\\n\\n아래는 흐름 도식입니다.",
+  "captureDlgAutoCaptureStep1Title": "1. 다른 앱에서 선택",
+  "captureDlgAutoCaptureStep1Body": "브라우저·PDF 등에서 드래그 또는 단어 더블클릭.",
+  "captureDlgAutoCaptureStep2Title": "2. 놓고 잠시 대기",
+  "captureDlgAutoCaptureStep2Body": "선택이 안정된 뒤 읽습니다.",
+  "captureDlgAutoCaptureStep3Title": "3. 팝업 표시",
+  "captureDlgAutoCaptureStep3Body": "팝업에서 문단을 열어 번역·저장 — 원문 영역에서 드래그하면 그 구만 번역합니다.",
+  "captureDlgAutoCaptureStep4Title": "4. 원문에서 다른 구간 더 선택",
+  "captureDlgAutoCaptureStep4Body": "팝업의 원문 영역에서 필요할 때마다 다른 구간을 드래그 선택하면 그 부분만 번역되며, 창을 닫지 않고 반복할 수 있습니다.",
+  "captureDlgAutoCaptureSchemeCaption": "개념도(실제 UI 아님)",
+  "captureOcrFlowHotkeyLabel": "단축키",
+  "captureOcrFlowRegionLabel": "영역 지정",
+  "captureOcrFlowResultLabel": "OCR 텍스트",
+  "captureOcrFlowCaption": "Ctrl+Shift+X 후 영역을 드래그하세요.",
+  "captureOcrVisualGuideLink": "OCR 단계 안내…",
+  "captureDlgOcrGuideTitle": "영역 OCR 방법",
+  "captureDlgOcrGuideIntro": "영역 OCR은 선택한 화면에서 글자를 읽습니다. 자동 수집과 무관합니다.\\n\\n아래는 단계입니다.",
+  "captureDlgOcrStep1Title": "1. 영역 캡처 시작",
+  "captureDlgOcrStep1Body": "다른 앱에서 Ctrl+Shift+X 또는 이 창 포커스 시 단축키.",
+  "captureDlgOcrStep2Title": "2. 사각형 드래그",
+  "captureDlgOcrStep2Body": "화면이 어두워지면 드래그로 영역 지정.",
+  "captureDlgOcrStep3Title": "3. 확인 후 결과 보기",
+  "captureDlgOcrStep3Body": "확인 후 OCR 결과가 팝업에서 열려 번역하거나 저장할 수 있습니다.",
+  "captureDlgOcrStep4Title": "4. 원문에서 다른 구간 더 선택",
+  "captureDlgOcrStep4Body": "팝업의 원문 영역에서 필요할 때마다 다른 구간을 드래그 선택하면 그 부분만 번역되며, 창을 닫지 않고 반복할 수 있습니다.",
+  "captureDlgOcrSchemeCaption": "개념도(실제 UI 아님)",
+  "captureActiveBehaviorNote": "선택 후 잠시 뒤 읽음 — 클립보드가 바뀔 수 있음.",
+  "captureShortcutsSectionTitle": "수집",
+  "captureShortcutsSectionBody": "Ctrl+Shift+D(텍스트), Ctrl+Shift+X(영역).",
+  "captureTextFromSelection": "선택 영역 텍스트",
+  "captureImageRegionOcr": "이미지/영역 OCR",
+  "capturePermissionsTitle": "권한",
+  "captureAccessibilityGrantedLine": "손쉬운 사용: {state}",
+  "@captureAccessibilityGrantedLine": {
+    "placeholders": {
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "captureScreenRecordingGrantedLine": "화면 녹화: {state}",
+  "@captureScreenRecordingGrantedLine": {
+    "placeholders": {
+      "state": {
+        "type": "String"
+      }
+    }
+  },
+  "capturePermRefresh": "새로 고침",
+  "capturePermRequest": "누락 권한 요청",
+  "capturePermChecking": "확인 중…",
+  "capturePermAllGranted": "모든 권한 허용됨.",
+  "capturePermSomeMissing": "권한 부족 — 설정에서 허용하세요.",
+  "captureHotkeyUnavailable": "전역 단축키 없음 — 앱 내 단축키 사용.",
+  "captureDlgTextCaptureTitle": "텍스트 수집",
+  "captureDlgTextCaptureBody": "수동: Ctrl+Shift+D.\\n자동: 드래그·더블클릭으로 강조 텍스트 읽기.",
+  "captureDlgImageCaptureTitle": "이미지/영역 OCR",
+  "captureDlgImageCaptureBody": "Ctrl+Shift+X로 영역 선택 OCR.",
+  "captureDlgTipsTitle": "수집 팁",
+  "captureDlgTipsBody": "장시간 작성 시 끄면 클립보드 간섭 감소.",
+  "captureHotkeyDlgTitle": "새 단축키",
+  "captureHotkeyDlgHintInitial": "Ctrl+Shift+글자/숫자",
+  "captureHotkeyDlgHintRetry": "Ctrl+Shift+글자/숫자 필요",
+  "vocabPageSubtitle": "검색·필터·덱 관리",
+  "vocabStudySelected": "선택 항목 학습",
+  "vocabStudyFiltered": "필터로 학습",
+  "vocabSelectBeforeStudy": "학습 전 단어를 선택하세요.",
+  "vocabNoMatchFilters": "필터와 일치하는 단어 없음.",
+  "vocabTipsTitle": "단어 팁",
+  "vocabTipsBody": "대량 작업 전 언어·출처로 필터.",
+  "vocabDeleteTitle": "저장 단어 삭제?",
+  "vocabDeleteBodyOne": "선택 항목 영구 삭제.",
+  "vocabDeleteBodyMany": "선택한 {count}개 영구 삭제.",
+  "@vocabDeleteBodyMany": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "vocabSearchPlaceholder": "용어·뜻·태그 검색",
+  "vocabAllLanguages": "모든 언어",
+  "vocabAllSources": "모든 출처",
+  "vocabAllTags": "모든 태그",
+  "vocabFilterActive": "활성",
+  "vocabFilterArchived": "보관",
+  "vocabFilterAll": "전체",
+  "vocabClearFilters": "필터 지우기",
+  "vocabTtsSectionTitle": "Google Cloud 텍스트 음성 변환",
+  "vocabTtsSectionBody": "긴 텍스트를 음성으로 합성합니다(Cloud TTS 한도 내 자동 분할). Text-to-Speech API 키와 API 사용 설정이 필요합니다.",
+  "vocabTtsApiKeyPlaceholder": "API 키(기기에 안전하게 저장)",
+  "vocabTtsSaveApiKey": "키 저장",
+  "vocabTtsApiKeySaved": "API 키를 저장했습니다.",
+  "vocabTtsApiKeyFromBuild": "앱 빌드 설정의 API 키를 사용 중입니다.",
+  "vocabTtsTextPlaceholder": "읽을 텍스트 입력(긴 글 지원)",
+  "vocabTtsStats": "UTF-8 크기: {bytes} · 요청 구간: {segments}",
+  "@vocabTtsStats": {
+    "placeholders": {
+      "bytes": {"type": "int"},
+      "segments": {"type": "int"}
+    }
+  },
+  "vocabTtsVoiceLabel": "음성",
+  "vocabTtsVoiceCustom": "사용자 지정 음성…",
+  "vocabTtsCustomVoicePlaceholder": "음성 이름(예: en-US-Neural2-J)",
+  "vocabTtsCustomLangPlaceholder": "languageCode(예: en-US)",
+  "vocabTtsSpeakingRate": "말 속도",
+  "vocabTtsGeneratePlay": "합성 후 재생",
+  "vocabTtsSaveMp3": "MP3 저장…",
+  "vocabTtsNeedApiKey": "Google Cloud Text-to-Speech API 키를 먼저 추가하세요.",
+  "vocabTtsNeedText": "합성할 텍스트를 입력하세요.",
+  "vocabTtsVoiceInvalid": "음성 이름과 languageCode를 모두 입력하세요.",
+  "vocabTtsError": "{message}",
+  "@vocabTtsError": {"placeholders": {"message": {"type": "String"}}},
+  "vocabTtsSavedFile": "오디오 저장됨: {path}",
+  "@vocabTtsSavedFile": {"placeholders": {"path": {"type": "String"}}},
+  "vocabEmptyLibrary": "단어 없음.",
+  "vocabColTermMeaning": "용어 / 뜻",
+  "vocabColSource": "출처",
+  "vocabColTags": "태그",
+  "vocabColNextReview": "다음 복습",
+  "vocabCtxMenuTag": "태그",
+  "vocabCtxMenuArchive": "보관",
+  "vocabCtxMenuResetSrs": "SRS 초기화",
+  "vocabCtxMenuDelete": "삭제",
+  "bulkTagCreateTitle": "태그 만들기",
+  "bulkTagCreatePlaceholder": "새 태그 입력",
+  "bulkTagRenameTitle": "태그 이름 변경",
+  "bulkTagRenamePlaceholder": "태그 입력",
+  "bulkTagDeleteTitle": "태그 삭제",
+  "bulkTagDeleteBody": "모든 단어에서 \"{tag}\" 제거?",
+  "@bulkTagDeleteBody": {
+    "placeholders": {
+      "tag": {
+        "type": "String"
+      }
+    }
+  },
+  "bulkTagFilterPlaceholder": "태그 필터",
+  "bulkTagClearSelections": "태그 선택 해제",
+  "bulkTagRename": "이름 변경",
+  "bulkTagDelete": "삭제",
+  "bulkTagApply": "적용",
+  "bulkTagNewBadge": "신규",
+  "bulkTagPanelTitle": "일괄 태그",
+  "bulkTagEmptyLibrary": "라이브러리에 태그 없음.",
+  "bulkTagNoMatchFilter": "필터와 일치하는 태그 없음.",
+  "bulkTagValidationEmpty": "태그 이름은 비울 수 없습니다.",
+  "bulkTagValidationDuplicate": "태그가 이미 있습니다.",
+  "bulkTagManageTooltip": "태그 관리",
+  "commonCreate": "만들기",
+  "customStudyTitle": "사용자 학습",
+  "customStudyEntriesCount": "선택 일치: {count}개",
+  "@customStudyEntriesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "customStudyMaxLabel": "최대 카드(비우면 전체)",
+  "customStudyMaxPlaceholder": "예: 50",
+  "customStudyRandomOrder": "무작위",
+  "customStudyCram": "벼락치기(일정 저장 안 함)",
+  "customStudyStart": "시작",
+  "reviewSrsTitle": "SRS 복습",
+  "reviewCramBadge": "벼락치기",
+  "reviewQueueCounts": "신규 {newCount} · 학습 {learningCount} · 복습 {reviewCount}",
+  "@reviewQueueCounts": {
+    "placeholders": {
+      "newCount": {
+        "type": "int"
+      },
+      "learningCount": {
+        "type": "int"
+      },
+      "reviewCount": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewAutoAudio": "자동 오디오",
+  "reviewAllLanguages": "모든 언어",
+  "reviewLanguageFilterTooltip": "언어 필터",
+  "reviewMixedProOnly": "믹스 모드는 Pro입니다.",
+  "reviewMixedEnable": "믹스 켜기",
+  "reviewMixedLocked": "믹스 (Pro)",
+  "reviewBasicMode": "기본 모드",
+  "reviewExitStudy": "학습 종료",
+  "reviewNoCardsDue": "만료 카드 없음.",
+  "reviewFinishing": "세션 종료 중…",
+  "reviewCompleted": "복습 완료.",
+  "reviewReviewsToday": "오늘 복습: {used}/{limit}",
+  "@reviewReviewsToday": {
+    "placeholders": {
+      "used": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewTipsTitle": "복습 팁",
+  "reviewTipsBody": "Enter 뒤집기·채점, Ctrl+Enter 오디오.",
+  "reviewGradeHintForward": "Enter 뒤집기 · Ctrl+Enter 오디오",
+  "reviewGradeHintReverse": "Enter 확인 · Ctrl+Enter 오디오",
+  "reviewAudioFailed": "오디오 재생 실패.",
+  "reviewPlayTerm": "용어 재생",
+  "reviewPlayAudio": "오디오 재생",
+  "reviewMeaning": "의미",
+  "reviewListenType": "듣고 입력",
+  "reviewListenInstructions": "오디오 듣고 원문 입력.",
+  "reviewTypeOriginalPlaceholder": "원문 입력",
+  "reviewCheckAnswer": "확인 (Enter)",
+  "reviewCorrect": "맞음",
+  "reviewIncorrect": "틀림",
+  "reviewYourAnswer": "내 답:",
+  "reviewExpected": "정답:",
+  "reviewAnswerEmptyMarker": "(비어 있음)",
+  "reviewGradeAgain": "다시 (1)",
+  "reviewGradeHard": "어려움 (2)",
+  "reviewGradeGood": "좋음 (3)",
+  "reviewGradeEasy": "쉬움 (4)",
+  "reviewGradeNameAgain": "again",
+  "reviewGradeNameHard": "hard",
+  "reviewGradeNameGood": "good",
+  "reviewGradeNameEasy": "easy",
+  "reviewSummaryWordsTitle": "방금 복습한 단어 ({count})",
+  "@reviewSummaryWordsTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewSummaryClose": "닫기",
+  "reviewSummaryTitle": "세션 요약",
+  "reviewSummaryGreatJob": "잘했어요, {name}!",
+  "@reviewSummaryGreatJob": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewSummaryEncourage": "오늘 목표를 달성했습니다.",
+  "reviewSummaryStatReviewed": "복습함",
+  "reviewSummaryStatMastered": "잘 기억함",
+  "reviewSummaryStatTime": "시간",
+  "reviewSummaryBackDashboard": "대시보드로",
+  "reviewSummarySeeWords": "복습 단어 보기",
+  "reviewSummaryCloudSyncing": "클라우드 동기화 중…",
+  "reviewSummaryCloudOk": "클라우드 동기화 성공",
+  "reviewSummaryCloudFail": "클라우드 동기화 실패",
+  "reviewSummaryYou": "당신",
+  "reviewDurSeconds": "{seconds}초",
+  "@reviewDurSeconds": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurMinutes": "{minutes}분",
+  "@reviewDurMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurMinutesSeconds": "{minutes}분 {seconds}초",
+  "@reviewDurMinutesSeconds": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurHours": "{hours}시간",
+  "@reviewDurHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "reviewDurHoursMinutes": "{hours}시간 {minutes}분",
+  "@reviewDurHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "captureSavePhrase": "구문 저장",
+  "captureSaveLine": "줄 저장",
+  "captureWholeLine": "전체 줄",
+  "captureListenSource": "원문 듣기",
+  "captureNoTextDetected": "텍스트 없음",
+  "captureAddTagLabel": "태그 추가",
+  "captureTagHint": "태그 입력",
+  "captureAutoRecentTag": "최근 태그 자동 입력",
+  "captureNoRecentTagsYet": "최근 태그 없음 — 저장 후 사용.",
+  "captureSavedToast": "저장 ✓",
+  "captureDailySaveLimitReached": "오늘 저장 한도({limit}회/일)에 도달했습니다. Pro로 무제한 저장.",
+  "@captureDailySaveLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "captureDailyTranslateLimitReached": "오늘 번역 호출 한도({limit}회/일)에 도달했습니다. Pro로 무제한.",
+  "@captureDailyTranslateLimitReached": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsTagManagerEmpty": "태그 없음.",
+  "meaningTranslating": "번역 중…",
+  "meaningNoTranslationYet": "번역 없음.",
+  "meaningDictHeading": "영어 정의",
+  "meaningFieldLabel": "의미",
+  "meaningFieldHint": "번역 편집",
+  "meaningPlayPronunciation": "발음 재생",
+  "meaningPlay": "재생",
+  "meaningPause": "일시정지",
+  "meaningPhraseMarker": "(구문)",
+  "settingsReviewAudioSection": "복습 오디오",
+  "settingsAutoPlayAudioTitle": "새 카드 자동 재생",
+  "settingsRememberTagTitle": "단어 추가 시 마지막 태그 기억",
+  "settingsLocalBackupTitle": "로컬 백업",
+  "settingsBackupNowJson": "지금 백업(JSON)",
+  "settingsImportBackup": "백업 가져오기(.db/.json)",
+  "settingsBackupFootnote": "서명 JSON 또는 .db/.json.",
+  "settingsManageTagsTitle": "태그 관리",
+  "settingsManageTagsSubtitle": "모든 단어에서 태그 편집.",
+  "settingsReplaceVocabTitle": "로컬 단어장 교체?",
+  "settingsReplaceVocabBody": "백업으로 교체. 되돌릴 수 없음.",
+  "settingsChooseFile": "파일 선택",
+  "settingsImporting": "가져오는 중…",
+  "settingsImportedCount": "{count}개 가져옴 ({kind}).",
+  "@settingsImportedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "kind": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsExportCancelled": "내보내기 취소",
+  "settingsSavedPath": "저장됨: {path}",
+  "@settingsSavedPath": {
+    "placeholders": {
+      "path": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsExportFailed": "내보내기 실패: {error}",
+  "@settingsExportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsImportFailed": "가져오기 실패: {error}",
+  "@settingsImportFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLanguageLoadError": "언어 설정 오류: {error}",
+  "@settingsLanguageLoadError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "commonErrorPrefix": "오류: {error}",
+  "@commonErrorPrefix": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "dashLearnerPickerLabel": "Who is learning?",
+  "dashLearnerPickerNewButton": "새로 만들기",
+  "localProfilesSectionTitle": "Local learners",
+  "localProfilesSectionDescription": "Each learner has a separate vocabulary library on this device. Switch profile to study a different word set.",
+  "localProfileDefaultName": "Default",
+  "localProfileActiveBadge": "Active",
+  "localProfileUseAction": "Use",
+  "localProfileAddAction": "Add learner",
+  "localProfileRenameAction": "Rename",
+  "localProfileDeleteAction": "Remove",
+  "localProfileAddTitle": "New learner",
+  "localProfileRenameTitle": "Rename learner",
+  "localProfileNameLabel": "Display name",
+  "localProfileDeleteConfirmTitle": "Remove learner?",
+  "localProfileDeleteConfirmBody": "Their vocabulary stays on this device until you clear app data. You can add this learner again anytime."
+}
