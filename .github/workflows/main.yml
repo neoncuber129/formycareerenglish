@@ -1,0 +1,78 @@
+name: Build Flutter IPA
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+
+    steps:
+      # ==============================
+      # 1. Checkout source code
+      # ==============================
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ==============================
+      # 2. Setup Flutter
+      # ==============================
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      # ==============================
+      # 3. Flutter version
+      # ==============================
+      - name: Flutter version
+        run: flutter --version
+
+      # ==============================
+      # 4. Get Flutter dependencies
+      # ==============================
+      - name: Flutter pub get
+        working-directory: apps/desktop
+        run: flutter pub get
+
+      # ==============================
+      # 5. Install CocoaPods
+      # ==============================
+      - name: Install CocoaPods
+        run: |
+          sudo gem install cocoapods
+          pod --version
+
+      # ==============================
+      # 6. Install iOS dependencies
+      # ==============================
+      - name: Pod install
+        working-directory: apps/desktop/ios
+        run: pod install --repo-update
+
+      # ==============================
+      # 7. Build IPA
+      # ==============================
+      - name: Build IPA
+        working-directory: apps/desktop
+        run: flutter build ipa --release
+
+      # ==============================
+      # 8. Check generated IPA
+      # ==============================
+      - name: Check IPA
+        working-directory: apps/desktop
+        run: |
+          echo "=== Generated IPA ==="
+          find build/ios/ipa -type f -name "*.ipa" -print
+
+      # ==============================
+      # 9. Upload IPA
+      # ==============================
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: formycareerenglish-ipa
+          path: apps/desktop/build/ios/ipa/*.ipa
+          if-no-files-found: error
